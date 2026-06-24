@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM Router — Smart Query Routing</title>
+  <meta name="description" content="Intelligently routes your queries to the most cost-efficient LLM. Reduce AI costs without sacrificing quality." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span class="logo-text">LLM Router</span>
+      </div>
+      <button class="sidebar-toggle" id="sidebarToggle" title="Toggle Sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Current Session</span>
+      <button class="new-chat-btn" id="newChatBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+        New Session
+      </button>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Model Tiers</span>
+      <div class="tier-legend">
+        <div class="tier-item tier-1">
+          <div class="tier-dot"></div>
+          <div>
+            <div class="tier-name">Tier 1 — Frontier</div>
+            <div class="tier-desc">GPT-4o, Claude 3.5, Gemini Pro</div>
+          </div>
+        </div>
+        <div class="tier-item tier-2">
+          <div class="tier-dot"></div>
+          <div>
+            <div class="tier-name">Tier 2 — Balanced</div>
+            <div class="tier-desc">GPT-4o Mini, Haiku, Flash</div>
+          </div>
+        </div>
+        <div class="tier-item tier-3">
+          <div class="tier-dot"></div>
+          <div>
+            <div class="tier-name">Tier 3 — Efficient</div>
+            <div class="tier-desc">Llama, Qwen, DeepSeek</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <span class="sidebar-label">Stats</span>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="statTotal">0</div>
+          <div class="stat-label">Queries</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statAvgTime">—</div>
+          <div class="stat-label">Avg Time</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statTier1">0</div>
+          <div class="stat-label">Tier 1</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statTier3">0</div>
+          <div class="stat-label">Tier 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="groq-status" id="groqStatus">
+        <div class="status-dot" id="statusDot"></div>
+        <span id="statusText">Checking...</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <button class="mobile-toggle" id="mobileToggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+      <div class="topbar-title">
+        <span>Query Router</span>
+        <span class="topbar-subtitle">Powered by Groq × OpenRouter</span>
+      </div>
+      <button class="catalog-btn" id="catalogBtn" title="View Model Catalog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <path d="M8 21h8M12 17v4"/>
+        </svg>
+        Models
+      </button>
+    </header>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">
+          <svg viewBox="0 0 64 64" fill="none">
+            <defs>
+              <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#6366f1"/>
+                <stop offset="100%" style="stop-color:#8b5cf6"/>
+              </linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="16" fill="url(#iconGrad)" opacity="0.15"/>
+            <path d="M32 16L16 24l16 8 16-8-16-8z" stroke="url(#iconGrad)" stroke-width="2" fill="none"/>
+            <path d="M16 36l16 8 16-8" stroke="url(#iconGrad)" stroke-width="2" fill="none"/>
+            <path d="M16 28l16 8 16-8" stroke="url(#iconGrad)" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <h1 class="empty-title">LLM Router</h1>
+        <p class="empty-subtitle">Send any query — I'll instantly decide which model it should go to and why.</p>
+        <div class="example-queries">
+          <button class="example-btn" onclick="tryExample('What is the capital of France?')">
+            💬 What is the capital of France?
+          </button>
+          <button class="example-btn" onclick="tryExample('Write a Python script to scrape product prices from Amazon and store them in a SQLite database')">
+            🐍 Write a Python script to scrape prices...
+          </button>
+          <button class="example-btn" onclick="tryExample('Make a SVG animation for solar system with orbiting planets')">
+            🌍 Make a SVG animation for solar system
+          </button>
+          <button class="example-btn" onclick="tryExample('Design a microservices architecture for a real-time payment processing system handling 1M TPS')">
+            🏗️ Design a microservices architecture...
+          </button>
+        </div>
+      </div>
+
+      <!-- Messages will be injected here -->
+      <div class="messages" id="messages"></div>
+    </div>
+
+    <!-- Attachment Preview -->
+    <div class="attachment-preview" id="attachmentPreview" style="display:none">
+      <div class="attachment-list" id="attachmentList"></div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <div class="input-box" id="inputBox">
+        <div class="input-tools">
+          <label class="tool-btn" for="fileInput" title="Attach file or image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+            </svg>
+            <input type="file" id="fileInput" accept="image/*,.pdf,.txt,.csv,.json,.md,.py,.js,.ts" multiple style="display:none" />
+          </label>
+        </div>
+
+        <textarea
+          id="queryInput"
+          class="query-input"
+          placeholder="Ask anything… (Press Enter to route, Shift+Enter for new line)"
+          rows="1"
+        ></textarea>
+
+        <button class="send-btn" id="sendBtn" title="Route query (Enter)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+      <div class="input-hint">Press <kbd>Enter</kbd> to route &nbsp;·&nbsp; <kbd>Shift+Enter</kbd> for new line &nbsp;·&nbsp; Attach files or images with the clip icon</div>
+    </div>
+  </main>
+
+  <!-- Model Catalog Modal -->
+  <div class="modal-overlay" id="catalogModal" style="display:none">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Model Catalog</h2>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-search">
+        <input type="text" id="catalogSearch" placeholder="Search models..." />
+      </div>
+      <div class="modal-body" id="catalogBody">
+        <div class="loading-spinner">
+          <div class="spinner"></div>
+          <span>Loading models from OpenRouter...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
