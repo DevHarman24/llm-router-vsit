@@ -1,0 +1,1732 @@
+{
+  "ai21/jamba-large-1.7": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "aion-labs/aion-1.0": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "aion-labs/aion-1.0-mini": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "aion-labs/aion-2.0": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "aion-labs/aion-rp-llama-3.1-8b": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "allenai/olmo-3-32b-think": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "amazon/nova-2-lite-v1": {
+    "coding": 23.0,
+    "reasoning": 18.2,
+    "vision": 18.2
+  },
+  "amazon/nova-lite-v1": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "amazon/nova-micro-v1": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "amazon/nova-premier-v1": {
+    "coding": 26.2,
+    "reasoning": 26.2,
+    "vision": 26.2
+  },
+  "amazon/nova-pro-v1": {
+    "coding": 21.4,
+    "reasoning": 21.4,
+    "vision": 21.4
+  },
+  "anthracite-org/magnum-v4-72b": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "anthropic/claude-3-haiku": {
+    "coding": 31.1,
+    "reasoning": 30.8,
+    "vision": 30.8
+  },
+  "anthropic/claude-fable-5": {
+    "coding": 76.5,
+    "reasoning": 59.9,
+    "vision": 59.9
+  },
+  "anthropic/claude-haiku-4.5": {
+    "coding": 43.9,
+    "reasoning": 29.6,
+    "vision": 29.6
+  },
+  "anthropic/claude-opus-4": {
+    "coding": 57.5,
+    "reasoning": 57.5,
+    "vision": 57.5
+  },
+  "anthropic/claude-opus-4.1": {
+    "coding": 56.0,
+    "reasoning": 56.0,
+    "vision": 56.0
+  },
+  "anthropic/claude-opus-4.5": {
+    "coding": 58.9,
+    "reasoning": 58.9,
+    "vision": 58.9
+  },
+  "anthropic/claude-opus-4.6": {
+    "coding": 63.8,
+    "reasoning": 63.8,
+    "vision": 63.8
+  },
+  "anthropic/claude-opus-4.6-fast": {
+    "coding": 63.8,
+    "reasoning": 63.8,
+    "vision": 63.8
+  },
+  "anthropic/claude-opus-4.7": {
+    "coding": 73.6,
+    "reasoning": 53.5,
+    "vision": 53.5
+  },
+  "anthropic/claude-opus-4.7-fast": {
+    "coding": 73.6,
+    "reasoning": 53.5,
+    "vision": 53.5
+  },
+  "anthropic/claude-opus-4.8": {
+    "coding": 74.3,
+    "reasoning": 55.7,
+    "vision": 55.7
+  },
+  "anthropic/claude-opus-4.8-fast": {
+    "coding": 74.3,
+    "reasoning": 55.7,
+    "vision": 55.7
+  },
+  "anthropic/claude-sonnet-4": {
+    "coding": 37.6,
+    "reasoning": 28.9,
+    "vision": 28.9
+  },
+  "anthropic/claude-sonnet-4.5": {
+    "coding": 52.1,
+    "reasoning": 36.4,
+    "vision": 36.4
+  },
+  "anthropic/claude-sonnet-4.6": {
+    "coding": 63.0,
+    "reasoning": 47.2,
+    "vision": 47.2
+  },
+  "anthropic/claude-sonnet-5": {
+    "coding": 71.5,
+    "reasoning": 53.4,
+    "vision": 53.4
+  },
+  "arcee-ai/coder-large": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "arcee-ai/trinity-large-thinking": {
+    "coding": 38.1,
+    "reasoning": 38.1,
+    "vision": 38.1
+  },
+  "arcee-ai/trinity-mini": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "arcee-ai/virtuoso-large": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "baidu/ernie-4.5-vl-424b-a47b": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "bytedance-seed/seed-1.6": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "bytedance-seed/seed-1.6-flash": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "bytedance-seed/seed-2.0-lite": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "bytedance-seed/seed-2.0-mini": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "bytedance/ui-tars-1.5-7b": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "cohere/command-a": {
+    "coding": 27.8,
+    "reasoning": 22.5,
+    "vision": 22.5
+  },
+  "cohere/command-r-08-2024": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "cohere/command-r-plus-08-2024": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "cohere/command-r7b-12-2024": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "cohere/north-mini-code:free": {
+    "coding": 36.5,
+    "reasoning": 36.5,
+    "vision": 36.5
+  },
+  "deepcogito/cogito-v2.1-671b": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "deepseek/deepseek-chat": {
+    "coding": 47.8,
+    "reasoning": 47.8,
+    "vision": 47.8
+  },
+  "deepseek/deepseek-chat-v3-0324": {
+    "coding": 21.2,
+    "reasoning": 15.4,
+    "vision": 15.4
+  },
+  "deepseek/deepseek-chat-v3.1": {
+    "coding": 46.2,
+    "reasoning": 46.2,
+    "vision": 46.2
+  },
+  "deepseek/deepseek-r1": {
+    "coding": 24.6,
+    "reasoning": 18.5,
+    "vision": 18.5
+  },
+  "deepseek/deepseek-r1-0528": {
+    "coding": 53.2,
+    "reasoning": 53.2,
+    "vision": 53.2
+  },
+  "deepseek/deepseek-r1-distill-llama-70b": {
+    "coding": 33.6,
+    "reasoning": 33.6,
+    "vision": 33.6
+  },
+  "deepseek/deepseek-v3.1-terminus": {
+    "coding": 43.3,
+    "reasoning": 43.3,
+    "vision": 43.3
+  },
+  "deepseek/deepseek-v3.2": {
+    "coding": 43.7,
+    "reasoning": 43.7,
+    "vision": 43.7
+  },
+  "deepseek/deepseek-v3.2-exp": {
+    "coding": 52.0,
+    "reasoning": 52.0,
+    "vision": 52.0
+  },
+  "deepseek/deepseek-v4-flash": {
+    "coding": 56.2,
+    "reasoning": 40.3,
+    "vision": 40.3
+  },
+  "deepseek/deepseek-v4-pro": {
+    "coding": 59.4,
+    "reasoning": 44.3,
+    "vision": 44.3
+  },
+  "google/gemini-2.5-flash": {
+    "coding": 46.6,
+    "reasoning": 46.6,
+    "vision": 46.6
+  },
+  "google/gemini-2.5-flash-image": {
+    "coding": 54.6,
+    "reasoning": 54.6,
+    "vision": 54.6
+  },
+  "google/gemini-2.5-flash-lite": {
+    "coding": 24.6,
+    "reasoning": 21.3,
+    "vision": 21.3
+  },
+  "google/gemini-2.5-flash-lite-preview-09-2025": {
+    "coding": 44.1,
+    "reasoning": 44.1,
+    "vision": 44.1
+  },
+  "google/gemini-2.5-pro": {
+    "coding": 33.3,
+    "reasoning": 25.8,
+    "vision": 25.8
+  },
+  "google/gemini-2.5-pro-preview": {
+    "coding": 34.5,
+    "reasoning": 32.8,
+    "vision": 32.8
+  },
+  "google/gemini-2.5-pro-preview-05-06": {
+    "coding": 34.5,
+    "reasoning": 32.8,
+    "vision": 32.8
+  },
+  "google/gemini-3-flash-preview": {
+    "coding": 51.0,
+    "reasoning": 51.0,
+    "vision": 51.0
+  },
+  "google/gemini-3-pro-image": {
+    "coding": 61.8,
+    "reasoning": 61.8,
+    "vision": 61.8
+  },
+  "google/gemini-3-pro-image-preview": {
+    "coding": 63.8,
+    "reasoning": 63.8,
+    "vision": 63.8
+  },
+  "google/gemini-3.1-flash-image": {
+    "coding": 63.0,
+    "reasoning": 63.0,
+    "vision": 63.0
+  },
+  "google/gemini-3.1-flash-image-preview": {
+    "coding": 65.0,
+    "reasoning": 65.0,
+    "vision": 65.0
+  },
+  "google/gemini-3.1-flash-lite": {
+    "coding": 32.7,
+    "reasoning": 23.0,
+    "vision": 23.0
+  },
+  "google/gemini-3.1-flash-lite-image": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "google/gemini-3.1-flash-lite-preview": {
+    "coding": 34.7,
+    "reasoning": 25.0,
+    "vision": 25.0
+  },
+  "google/gemini-3.1-pro-preview": {
+    "coding": 68.8,
+    "reasoning": 46.5,
+    "vision": 46.5
+  },
+  "google/gemini-3.1-pro-preview-customtools": {
+    "coding": 66.8,
+    "reasoning": 44.5,
+    "vision": 44.5
+  },
+  "google/gemini-3.5-flash": {
+    "coding": 70.1,
+    "reasoning": 50.2,
+    "vision": 50.2
+  },
+  "google/gemma-2-27b-it": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "google/gemma-3-12b-it": {
+    "coding": 5.8,
+    "reasoning": 5.5,
+    "vision": 5.5
+  },
+  "google/gemma-3-27b-it": {
+    "coding": 10.1,
+    "reasoning": 7.4,
+    "vision": 7.4
+  },
+  "google/gemma-3-4b-it": {
+    "coding": 2.7,
+    "reasoning": 2.7,
+    "vision": 2.7
+  },
+  "google/gemma-3n-e4b-it": {
+    "coding": 3.2,
+    "reasoning": 3.2,
+    "vision": 3.2
+  },
+  "google/gemma-4-26b-a4b-it": {
+    "coding": 39.3,
+    "reasoning": 25.7,
+    "vision": 25.7
+  },
+  "google/gemma-4-26b-a4b-it:free": {
+    "coding": 39.3,
+    "reasoning": 25.7,
+    "vision": 25.7
+  },
+  "google/gemma-4-31b-it": {
+    "coding": 43.4,
+    "reasoning": 29.4,
+    "vision": 29.4
+  },
+  "google/gemma-4-31b-it:free": {
+    "coding": 43.4,
+    "reasoning": 29.4,
+    "vision": 29.4
+  },
+  "google/lyria-3-clip-preview": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "google/lyria-3-pro-preview": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "gryphe/mythomax-l2-13b": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "ibm-granite/granite-4.0-h-micro": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "ibm-granite/granite-4.1-8b": {
+    "coding": 9.5,
+    "reasoning": 9.5,
+    "vision": 9.5
+  },
+  "inception/mercury-2": {
+    "coding": 21.5,
+    "reasoning": 21.5,
+    "vision": 21.5
+  },
+  "inclusionai/ling-2.6-1t": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "inclusionai/ling-2.6-flash": {
+    "coding": 25.3,
+    "reasoning": 14.1,
+    "vision": 14.1
+  },
+  "inclusionai/ring-2.6-1t": {
+    "coding": 42.8,
+    "reasoning": 30.6,
+    "vision": 30.6
+  },
+  "inflection/inflection-3-pi": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "inflection/inflection-3-productivity": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "kwaipilot/kat-coder-pro-v2": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "liquid/lfm-2-24b-a2b": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "liquid/lfm-2.5-1.2b-instruct:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "liquid/lfm-2.5-1.2b-thinking:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "mancer/weaver": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "meta-llama/llama-3-8b-instruct": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "meta-llama/llama-3.1-70b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "meta-llama/llama-3.1-8b-instruct": {
+    "coding": 5.4,
+    "reasoning": 7.6,
+    "vision": 7.6
+  },
+  "meta-llama/llama-3.2-11b-vision-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "meta-llama/llama-3.2-1b-instruct": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "meta-llama/llama-3.2-3b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "meta-llama/llama-3.2-3b-instruct:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "meta-llama/llama-3.3-70b-instruct": {
+    "coding": 11.9,
+    "reasoning": 9.4,
+    "vision": 9.4
+  },
+  "meta-llama/llama-3.3-70b-instruct:free": {
+    "coding": 11.9,
+    "reasoning": 9.4,
+    "vision": 9.4
+  },
+  "meta-llama/llama-4-maverick": {
+    "coding": 16.3,
+    "reasoning": 14.3,
+    "vision": 14.3
+  },
+  "meta-llama/llama-4-scout": {
+    "coding": 8.2,
+    "reasoning": 10.0,
+    "vision": 10.0
+  },
+  "meta-llama/llama-guard-4-12b": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "microsoft/phi-4": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "microsoft/phi-4-mini-instruct": {
+    "coding": 51,
+    "reasoning": 51,
+    "vision": 51
+  },
+  "microsoft/wizardlm-2-8x22b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "minimax/minimax-01": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "minimax/minimax-m1": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "minimax/minimax-m2": {
+    "coding": 49.6,
+    "reasoning": 49.6,
+    "vision": 49.6
+  },
+  "minimax/minimax-m2-her": {
+    "coding": 47.6,
+    "reasoning": 47.6,
+    "vision": 47.6
+  },
+  "minimax/minimax-m2.1": {
+    "coding": 56.0,
+    "reasoning": 56.0,
+    "vision": 56.0
+  },
+  "minimax/minimax-m2.5": {
+    "coding": 55.2,
+    "reasoning": 55.2,
+    "vision": 55.2
+  },
+  "minimax/minimax-m2.7": {
+    "coding": 52.6,
+    "reasoning": 38.1,
+    "vision": 38.1
+  },
+  "minimax/minimax-m3": {
+    "coding": 58.6,
+    "reasoning": 44.4,
+    "vision": 44.4
+  },
+  "mistralai/codestral-2508": {
+    "coding": 41.1,
+    "reasoning": 41.1,
+    "vision": 41.1
+  },
+  "mistralai/devstral-2512": {
+    "coding": 31.3,
+    "reasoning": 19.2,
+    "vision": 19.2
+  },
+  "mistralai/ministral-14b-2512": {
+    "coding": 14.4,
+    "reasoning": 11.1,
+    "vision": 11.1
+  },
+  "mistralai/ministral-3b-2512": {
+    "coding": 4.8,
+    "reasoning": 6.8,
+    "vision": 6.8
+  },
+  "mistralai/ministral-8b-2512": {
+    "coding": 9.7,
+    "reasoning": 9.0,
+    "vision": 9.0
+  },
+  "mistralai/mistral-large": {
+    "coding": 18.1,
+    "reasoning": 13.9,
+    "vision": 13.9
+  },
+  "mistralai/mistral-large-2407": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "mistralai/mistral-large-2512": {
+    "coding": 20.1,
+    "reasoning": 15.9,
+    "vision": 15.9
+  },
+  "mistralai/mistral-medium-3": {
+    "coding": 48.6,
+    "reasoning": 48.6,
+    "vision": 48.6
+  },
+  "mistralai/mistral-medium-3-5": {
+    "coding": 46.9,
+    "reasoning": 29.9,
+    "vision": 29.9
+  },
+  "mistralai/mistral-medium-3.1": {
+    "coding": 20.5,
+    "reasoning": 14.7,
+    "vision": 14.7
+  },
+  "mistralai/mistral-nemo": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "mistralai/mistral-saba": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "mistralai/mistral-small-24b-instruct-2501": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "mistralai/mistral-small-2603": {
+    "coding": 26.6,
+    "reasoning": 19.6,
+    "vision": 19.6
+  },
+  "mistralai/mistral-small-3.1-24b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "mistralai/mistral-small-3.2-24b-instruct": {
+    "coding": 40.3,
+    "reasoning": 40.3,
+    "vision": 40.3
+  },
+  "mistralai/mixtral-8x22b-instruct": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "mistralai/voxtral-small-24b-2507": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "moonshotai/kimi-k2": {
+    "coding": 51.1,
+    "reasoning": 51.1,
+    "vision": 51.1
+  },
+  "moonshotai/kimi-k2-0905": {
+    "coding": 48.4,
+    "reasoning": 48.4,
+    "vision": 48.4
+  },
+  "moonshotai/kimi-k2-thinking": {
+    "coding": 21.0,
+    "reasoning": 17.3,
+    "vision": 17.3
+  },
+  "moonshotai/kimi-k2.5": {
+    "coding": 53.3,
+    "reasoning": 53.3,
+    "vision": 53.3
+  },
+  "moonshotai/kimi-k2.6": {
+    "coding": 56.0,
+    "reasoning": 42.8,
+    "vision": 42.8
+  },
+  "moonshotai/kimi-k2.7-code": {
+    "coding": 60.8,
+    "reasoning": 41.9,
+    "vision": 41.9
+  },
+  "morph/morph-v3-fast": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "morph/morph-v3-large": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "nex-agi/nex-n2-mini": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "nex-agi/nex-n2-pro": {
+    "coding": 50.4,
+    "reasoning": 50.4,
+    "vision": 50.4
+  },
+  "nousresearch/hermes-3-llama-3.1-405b": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "nousresearch/hermes-3-llama-3.1-405b:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "nousresearch/hermes-3-llama-3.1-70b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "nousresearch/hermes-4-405b": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "nousresearch/hermes-4-70b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "nvidia/llama-3.3-nemotron-super-49b-v1.5": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "nvidia/nemotron-3-nano-30b-a3b": {
+    "coding": 14.4,
+    "reasoning": 14.2,
+    "vision": 14.2
+  },
+  "nvidia/nemotron-3-nano-30b-a3b:free": {
+    "coding": 14.4,
+    "reasoning": 14.2,
+    "vision": 14.2
+  },
+  "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "nvidia/nemotron-3-super-120b-a12b": {
+    "coding": 37.7,
+    "reasoning": 25.4,
+    "vision": 25.4
+  },
+  "nvidia/nemotron-3-super-120b-a12b:free": {
+    "coding": 37.7,
+    "reasoning": 25.4,
+    "vision": 25.4
+  },
+  "nvidia/nemotron-3-ultra-550b-a55b": {
+    "coding": 49.3,
+    "reasoning": 37.8,
+    "vision": 37.8
+  },
+  "nvidia/nemotron-3-ultra-550b-a55b:free": {
+    "coding": 49.3,
+    "reasoning": 37.8,
+    "vision": 37.8
+  },
+  "nvidia/nemotron-3.5-content-safety:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "nvidia/nemotron-nano-12b-v2-vl:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "nvidia/nemotron-nano-9b-v2:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "openai/gpt-3.5-turbo": {
+    "coding": 10.7,
+    "reasoning": 10.7,
+    "vision": 10.7
+  },
+  "openai/gpt-3.5-turbo-0613": {
+    "coding": 19.7,
+    "reasoning": 15.2,
+    "vision": 15.2
+  },
+  "openai/gpt-3.5-turbo-16k": {
+    "coding": 19.7,
+    "reasoning": 15.2,
+    "vision": 15.2
+  },
+  "openai/gpt-3.5-turbo-instruct": {
+    "coding": 18.2,
+    "reasoning": 14.3,
+    "vision": 14.3
+  },
+  "openai/gpt-4": {
+    "coding": 13.1,
+    "reasoning": 13.1,
+    "vision": 13.1
+  },
+  "openai/gpt-4-turbo": {
+    "coding": 21.5,
+    "reasoning": 21.5,
+    "vision": 21.5
+  },
+  "openai/gpt-4-turbo-preview": {
+    "coding": 33.3,
+    "reasoning": 35.4,
+    "vision": 35.4
+  },
+  "openai/gpt-4.1": {
+    "coding": 50.4,
+    "reasoning": 50.4,
+    "vision": 50.4
+  },
+  "openai/gpt-4.1-mini": {
+    "coding": 20.2,
+    "reasoning": 14.8,
+    "vision": 14.8
+  },
+  "openai/gpt-4.1-nano": {
+    "coding": 11.1,
+    "reasoning": 9.6,
+    "vision": 9.6
+  },
+  "openai/gpt-4o": {
+    "coding": 37.0,
+    "reasoning": 37.0,
+    "vision": 37.0
+  },
+  "openai/gpt-4o-2024-05-13": {
+    "coding": 24.2,
+    "reasoning": 24.2,
+    "vision": 24.2
+  },
+  "openai/gpt-4o-2024-08-06": {
+    "coding": 37.0,
+    "reasoning": 35.9,
+    "vision": 35.9
+  },
+  "openai/gpt-4o-2024-11-20": {
+    "coding": 37.0,
+    "reasoning": 35.9,
+    "vision": 35.9
+  },
+  "openai/gpt-4o-mini": {
+    "coding": 11.4,
+    "reasoning": 1.0,
+    "vision": 1.0
+  },
+  "openai/gpt-4o-mini-2024-07-18": {
+    "coding": 35.7,
+    "reasoning": 33.6,
+    "vision": 33.6
+  },
+  "openai/gpt-4o-mini-search-preview": {
+    "coding": 35.7,
+    "reasoning": 33.6,
+    "vision": 33.6
+  },
+  "openai/gpt-4o-search-preview": {
+    "coding": 37.0,
+    "reasoning": 35.9,
+    "vision": 35.9
+  },
+  "openai/gpt-5": {
+    "coding": 37.8,
+    "reasoning": 34.7,
+    "vision": 34.7
+  },
+  "openai/gpt-5-chat": {
+    "coding": 35.8,
+    "reasoning": 32.7,
+    "vision": 32.7
+  },
+  "openai/gpt-5-codex": {
+    "coding": 43.2,
+    "reasoning": 43.2,
+    "vision": 43.2
+  },
+  "openai/gpt-5-image": {
+    "coding": 53.0,
+    "reasoning": 53.0,
+    "vision": 53.0
+  },
+  "openai/gpt-5-image-mini": {
+    "coding": 50.8,
+    "reasoning": 50.8,
+    "vision": 50.8
+  },
+  "openai/gpt-5-mini": {
+    "coding": 15.6,
+    "reasoning": 25.3,
+    "vision": 25.3
+  },
+  "openai/gpt-5-nano": {
+    "coding": 46.4,
+    "reasoning": 46.4,
+    "vision": 46.4
+  },
+  "openai/gpt-5-pro": {
+    "coding": 35.8,
+    "reasoning": 32.7,
+    "vision": 32.7
+  },
+  "openai/gpt-5.1": {
+    "coding": 49.4,
+    "reasoning": 36.9,
+    "vision": 36.9
+  },
+  "openai/gpt-5.1-chat": {
+    "coding": 47.4,
+    "reasoning": 34.9,
+    "vision": 34.9
+  },
+  "openai/gpt-5.1-codex": {
+    "coding": 51.0,
+    "reasoning": 51.0,
+    "vision": 51.0
+  },
+  "openai/gpt-5.1-codex-max": {
+    "coding": 49.0,
+    "reasoning": 49.0,
+    "vision": 49.0
+  },
+  "openai/gpt-5.1-codex-mini": {
+    "coding": 40.0,
+    "reasoning": 40.0,
+    "vision": 40.0
+  },
+  "openai/gpt-5.2": {
+    "coding": 49.9,
+    "reasoning": 49.9,
+    "vision": 49.9
+  },
+  "openai/gpt-5.2-chat": {
+    "coding": 47.9,
+    "reasoning": 47.9,
+    "vision": 47.9
+  },
+  "openai/gpt-5.2-codex": {
+    "coding": 44.1,
+    "reasoning": 44.1,
+    "vision": 44.1
+  },
+  "openai/gpt-5.2-pro": {
+    "coding": 47.9,
+    "reasoning": 47.9,
+    "vision": 47.9
+  },
+  "openai/gpt-5.3-chat": {
+    "coding": 35.8,
+    "reasoning": 32.7,
+    "vision": 32.7
+  },
+  "openai/gpt-5.3-codex": {
+    "coding": 44.8,
+    "reasoning": 44.8,
+    "vision": 44.8
+  },
+  "openai/gpt-5.4": {
+    "coding": 71.1,
+    "reasoning": 51.4,
+    "vision": 51.4
+  },
+  "openai/gpt-5.4-image-2": {
+    "coding": 69.1,
+    "reasoning": 49.4,
+    "vision": 49.4
+  },
+  "openai/gpt-5.4-mini": {
+    "coding": 56.1,
+    "reasoning": 40.0,
+    "vision": 40.0
+  },
+  "openai/gpt-5.4-nano": {
+    "coding": 56.1,
+    "reasoning": 38.2,
+    "vision": 38.2
+  },
+  "openai/gpt-5.4-pro": {
+    "coding": 69.1,
+    "reasoning": 49.4,
+    "vision": 49.4
+  },
+  "openai/gpt-5.5": {
+    "coding": 74.9,
+    "reasoning": 54.8,
+    "vision": 54.8
+  },
+  "openai/gpt-5.5-pro": {
+    "coding": 72.9,
+    "reasoning": 52.8,
+    "vision": 52.8
+  },
+  "openai/gpt-audio": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "openai/gpt-audio-mini": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "openai/gpt-chat-latest": {
+    "coding": 66.0,
+    "reasoning": 62.0,
+    "vision": 62.0
+  },
+  "openai/gpt-oss-120b": {
+    "coding": 30.4,
+    "reasoning": 23.8,
+    "vision": 23.8
+  },
+  "openai/gpt-oss-120b:free": {
+    "coding": 30.4,
+    "reasoning": 23.8,
+    "vision": 23.8
+  },
+  "openai/gpt-oss-20b": {
+    "coding": 20.7,
+    "reasoning": 14.9,
+    "vision": 14.9
+  },
+  "openai/gpt-oss-20b:free": {
+    "coding": 20.7,
+    "reasoning": 14.9,
+    "vision": 14.9
+  },
+  "openai/gpt-oss-safeguard-20b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "openai/o1": {
+    "coding": 39.7,
+    "reasoning": 39.7,
+    "vision": 39.7
+  },
+  "openai/o1-pro": {
+    "coding": 38.6,
+    "reasoning": 37.7,
+    "vision": 37.7
+  },
+  "openai/o3": {
+    "coding": 52.8,
+    "reasoning": 52.8,
+    "vision": 52.8
+  },
+  "openai/o3-deep-research": {
+    "coding": 38.6,
+    "reasoning": 37.7,
+    "vision": 37.7
+  },
+  "openai/o3-mini": {
+    "coding": 36.5,
+    "reasoning": 35.3,
+    "vision": 35.3
+  },
+  "openai/o3-mini-high": {
+    "coding": 16.3,
+    "reasoning": 15.6,
+    "vision": 15.6
+  },
+  "openai/o3-pro": {
+    "coding": 39.7,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "openai/o4-mini": {
+    "coding": 45.7,
+    "reasoning": 45.7,
+    "vision": 45.7
+  },
+  "openai/o4-mini-deep-research": {
+    "coding": 38.0,
+    "reasoning": 36.1,
+    "vision": 36.1
+  },
+  "openai/o4-mini-high": {
+    "coding": 38.0,
+    "reasoning": 36.1,
+    "vision": 36.1
+  },
+  "openrouter/auto": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "openrouter/bodybuilder": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "openrouter/free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "openrouter/fusion": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "openrouter/owl-alpha": {
+    "coding": 60,
+    "reasoning": 60,
+    "vision": 60
+  },
+  "openrouter/pareto-code": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "perceptron/perceptron-mk1": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "perplexity/sonar": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "perplexity/sonar-deep-research": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "perplexity/sonar-pro": {
+    "coding": 66.0,
+    "reasoning": 62.0,
+    "vision": 62.0
+  },
+  "perplexity/sonar-pro-search": {
+    "coding": 66.0,
+    "reasoning": 62.0,
+    "vision": 62.0
+  },
+  "perplexity/sonar-reasoning-pro": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "poolside/laguna-m.1": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "poolside/laguna-m.1:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "poolside/laguna-xs-2.1": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "poolside/laguna-xs-2.1:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "poolside/laguna-xs.2": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "poolside/laguna-xs.2:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "qwen/qwen-2.5-72b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen-2.5-7b-instruct": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "qwen/qwen-2.5-coder-32b-instruct": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen-plus": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen-plus-2025-07-28": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen-plus-2025-07-28:thinking": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen2.5-vl-72b-instruct": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3-14b": {
+    "coding": 13.8,
+    "reasoning": 10.4,
+    "vision": 10.4
+  },
+  "qwen/qwen3-235b-a22b": {
+    "coding": 36.1,
+    "reasoning": 36.1,
+    "vision": 36.1
+  },
+  "qwen/qwen3-235b-a22b-2507": {
+    "coding": 41.5,
+    "reasoning": 41.5,
+    "vision": 41.5
+  },
+  "qwen/qwen3-235b-a22b-thinking-2507": {
+    "coding": 22.1,
+    "reasoning": 19.6,
+    "vision": 19.6
+  },
+  "qwen/qwen3-30b-a3b": {
+    "coding": 38.1,
+    "reasoning": 38.1,
+    "vision": 38.1
+  },
+  "qwen/qwen3-30b-a3b-instruct-2507": {
+    "coding": 36.1,
+    "reasoning": 36.1,
+    "vision": 36.1
+  },
+  "qwen/qwen3-30b-a3b-thinking-2507": {
+    "coding": 12.1,
+    "reasoning": 14.4,
+    "vision": 14.4
+  },
+  "qwen/qwen3-32b": {
+    "coding": 15.3,
+    "reasoning": 11.5,
+    "vision": 11.5
+  },
+  "qwen/qwen3-8b": {
+    "coding": 9.0,
+    "reasoning": 8.3,
+    "vision": 8.3
+  },
+  "qwen/qwen3-coder": {
+    "coding": 59.7,
+    "reasoning": 59.7,
+    "vision": 59.7
+  },
+  "qwen/qwen3-coder-30b-a3b-instruct": {
+    "coding": 55.3,
+    "reasoning": 55.3,
+    "vision": 55.3
+  },
+  "qwen/qwen3-coder-flash": {
+    "coding": 57.7,
+    "reasoning": 57.7,
+    "vision": 57.7
+  },
+  "qwen/qwen3-coder-next": {
+    "coding": 36.2,
+    "reasoning": 21.1,
+    "vision": 21.1
+  },
+  "qwen/qwen3-coder-plus": {
+    "coding": 57.7,
+    "reasoning": 57.7,
+    "vision": 57.7
+  },
+  "qwen/qwen3-coder:free": {
+    "coding": 59.7,
+    "reasoning": 59.7,
+    "vision": 59.7
+  },
+  "qwen/qwen3-max": {
+    "coding": 42.8,
+    "reasoning": 42.8,
+    "vision": 42.8
+  },
+  "qwen/qwen3-max-thinking": {
+    "coding": 40.8,
+    "reasoning": 40.8,
+    "vision": 40.8
+  },
+  "qwen/qwen3-next-80b-a3b-instruct": {
+    "coding": 15.4,
+    "reasoning": 14.7,
+    "vision": 14.7
+  },
+  "qwen/qwen3-next-80b-a3b-instruct:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "qwen/qwen3-next-80b-a3b-thinking": {
+    "coding": 17.4,
+    "reasoning": 16.7,
+    "vision": 16.7
+  },
+  "qwen/qwen3-vl-235b-a22b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen3-vl-235b-a22b-thinking": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3-vl-30b-a3b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen3-vl-30b-a3b-thinking": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3-vl-32b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen3-vl-8b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "qwen/qwen3-vl-8b-thinking": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3.5-122b-a10b": {
+    "coding": 45.7,
+    "reasoning": 32.3,
+    "vision": 32.3
+  },
+  "qwen/qwen3.5-27b": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3.5-35b-a3b": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3.5-397b-a17b": {
+    "coding": 48.2,
+    "reasoning": 33.7,
+    "vision": 33.7
+  },
+  "qwen/qwen3.5-9b": {
+    "coding": 28.7,
+    "reasoning": 21.4,
+    "vision": 21.4
+  },
+  "qwen/qwen3.5-flash-02-23": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "qwen/qwen3.5-plus-02-15": {
+    "coding": 47.3,
+    "reasoning": 47.3,
+    "vision": 47.3
+  },
+  "qwen/qwen3.5-plus-20260420": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3.6-27b": {
+    "coding": 53.7,
+    "reasoning": 37.1,
+    "vision": 37.1
+  },
+  "qwen/qwen3.6-35b-a3b": {
+    "coding": 41.9,
+    "reasoning": 31.6,
+    "vision": 31.6
+  },
+  "qwen/qwen3.6-flash": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "qwen/qwen3.6-max-preview": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "qwen/qwen3.6-plus": {
+    "coding": 54.5,
+    "reasoning": 39.6,
+    "vision": 39.6
+  },
+  "qwen/qwen3.7-max": {
+    "coding": 66.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "qwen/qwen3.7-plus": {
+    "coding": 55.9,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "rekaai/reka-edge": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "rekaai/reka-flash-3": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "relace/relace-apply-3": {
+    "coding": 43.0,
+    "reasoning": 39.0,
+    "vision": 39.0
+  },
+  "relace/relace-search": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "sakana/fugu-ultra": {
+    "coding": 66.0,
+    "reasoning": 62.0,
+    "vision": 62.0
+  },
+  "sao10k/l3-lunaris-8b": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "sao10k/l3.1-70b-hanami-x1": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "sao10k/l3.1-euryale-70b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "sao10k/l3.3-euryale-70b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "stepfun/step-3.5-flash": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "stepfun/step-3.7-flash": {
+    "coding": 37.3,
+    "reasoning": 29.7,
+    "vision": 29.7
+  },
+  "switchpoint/router": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "tencent/hunyuan-a13b-instruct": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "tencent/hy3": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "tencent/hy3-preview": {
+    "coding": 28.0,
+    "reasoning": 24.0,
+    "vision": 24.0
+  },
+  "tencent/hy3:free": {
+    "coding": 30.0,
+    "reasoning": 28.0,
+    "vision": 28.0
+  },
+  "thedrummer/cydonia-24b-v4.1": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "thedrummer/rocinante-12b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "thedrummer/skyfall-36b-v2": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "thedrummer/unslopnemo-12b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "undi95/remm-slerp-l2-13b": {
+    "coding": 36.0,
+    "reasoning": 32.0,
+    "vision": 32.0
+  },
+  "upstage/solar-pro-3": {
+    "coding": 16.2,
+    "reasoning": 14.1,
+    "vision": 14.1
+  },
+  "writer/palmyra-x5": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "x-ai/grok-4.20": {
+    "coding": 50.0,
+    "reasoning": 50.0,
+    "vision": 50.0
+  },
+  "x-ai/grok-4.20-multi-agent": {
+    "coding": 48.0,
+    "reasoning": 48.0,
+    "vision": 48.0
+  },
+  "x-ai/grok-4.3": {
+    "coding": 42.2,
+    "reasoning": 37.6,
+    "vision": 37.6
+  },
+  "x-ai/grok-build-0.1": {
+    "coding": 51.5,
+    "reasoning": 39.8,
+    "vision": 39.8
+  },
+  "xiaomi/mimo-v2.5": {
+    "coding": 53.7,
+    "reasoning": 53.7,
+    "vision": 53.7
+  },
+  "xiaomi/mimo-v2.5-pro": {
+    "coding": 60.2,
+    "reasoning": 42.2,
+    "vision": 42.2
+  },
+  "z-ai/glm-4.5": {
+    "coding": 54.5,
+    "reasoning": 54.5,
+    "vision": 54.5
+  },
+  "z-ai/glm-4.5-air": {
+    "coding": 52.9,
+    "reasoning": 52.9,
+    "vision": 52.9
+  },
+  "z-ai/glm-4.5v": {
+    "coding": 52.5,
+    "reasoning": 52.5,
+    "vision": 52.5
+  },
+  "z-ai/glm-4.6": {
+    "coding": 45.8,
+    "reasoning": 28.7,
+    "vision": 28.7
+  },
+  "z-ai/glm-4.6v": {
+    "coding": 43.8,
+    "reasoning": 26.7,
+    "vision": 26.7
+  },
+  "z-ai/glm-4.7": {
+    "coding": 45.3,
+    "reasoning": 33.7,
+    "vision": 33.7
+  },
+  "z-ai/glm-4.7-flash": {
+    "coding": 50.7,
+    "reasoning": 50.7,
+    "vision": 50.7
+  },
+  "z-ai/glm-5": {
+    "coding": 54.7,
+    "reasoning": 54.7,
+    "vision": 54.7
+  },
+  "z-ai/glm-5-turbo": {
+    "coding": 57.5,
+    "reasoning": 57.5,
+    "vision": 57.5
+  },
+  "z-ai/glm-5.1": {
+    "coding": 55.8,
+    "reasoning": 40.2,
+    "vision": 40.2
+  },
+  "z-ai/glm-5.2": {
+    "coding": 68.8,
+    "reasoning": 51.1,
+    "vision": 51.1
+  },
+  "z-ai/glm-5v-turbo": {
+    "coding": 49.8,
+    "reasoning": 49.8,
+    "vision": 49.8
+  },
+  "~anthropic/claude-fable-latest": {
+    "coding": 72.0,
+    "reasoning": 68.0,
+    "vision": 68.0
+  },
+  "~anthropic/claude-haiku-latest": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "~anthropic/claude-opus-latest": {
+    "coding": 66.0,
+    "reasoning": 62.0,
+    "vision": 62.0
+  },
+  "~anthropic/claude-sonnet-latest": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "~google/gemini-flash-latest": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "~google/gemini-pro-latest": {
+    "coding": 58.0,
+    "reasoning": 54.0,
+    "vision": 54.0
+  },
+  "~moonshotai/kimi-latest": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  },
+  "~openai/gpt-latest": {
+    "coding": 66.0,
+    "reasoning": 62.0,
+    "vision": 62.0
+  },
+  "~openai/gpt-mini-latest": {
+    "coding": 50.0,
+    "reasoning": 46.0,
+    "vision": 46.0
+  }
+}

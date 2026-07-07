@@ -42,6 +42,7 @@ def route(
     has_file: bool = False,
     file_size_kb: float = 0,
     groq_api_key: Optional[str] = None,
+    mode: str = "standard",
 ) -> RoutingDecision:
     """
     Main routing function. Returns a RoutingDecision with the recommended model.
@@ -101,6 +102,7 @@ def route(
         needs_thinking=needs_thinking,
         needs_coding=needs_coding,
         min_context=min_context,
+        mode=mode,
     )
 
     # Fallback: if no model found for tier, try adjacent tiers
@@ -111,7 +113,8 @@ def route(
                 needs_vision=needs_vision,
                 needs_thinking=needs_thinking,
                 needs_coding=needs_coding,
-                min_context=min_context
+                min_context=min_context,
+                mode=mode,
             )
             if model:
                 final_tier = fallback_tier

@@ -33,6 +33,7 @@ class RouteRequest(BaseModel):
     has_image: bool = False
     has_file: bool = False
     file_size_kb: float = 0
+    mode: str = "standard"
 
 
 class RouteResponse(BaseModel):
@@ -56,6 +57,7 @@ class RouteResponse(BaseModel):
     signals: list[str]
     reasoning: str
     classifier_source: Optional[str] = None
+    mode: str = "standard"
 
 
 @app.post("/api/route", response_model=RouteResponse)
@@ -68,6 +70,7 @@ async def route_query(request: RouteRequest):
         has_file=request.has_file,
         file_size_kb=request.file_size_kb,
         groq_api_key=groq_key or None,
+        mode=request.mode,
     )
     return RouteResponse(
         model_id=decision.model.id,
@@ -90,6 +93,7 @@ async def route_query(request: RouteRequest):
         signals=decision.signals,
         reasoning=decision.reasoning,
         classifier_source=decision.classifier.source if decision.classifier else "heuristic",
+        mode=request.mode,
     )
 
 
@@ -97,6 +101,7 @@ async def route_query(request: RouteRequest):
 async def route_with_file(
     query: str = Form(...),
     file: Optional[UploadFile] = File(None),
+    mode: str = Form("standard"),
 ):
     """Route a query that may include an uploaded file or image."""
     has_image = False
@@ -117,6 +122,7 @@ async def route_with_file(
         has_file=has_file,
         file_size_kb=file_size_kb,
         groq_api_key=groq_key or None,
+        mode=mode,
     )
 
     return RouteResponse(
@@ -140,6 +146,7 @@ async def route_with_file(
         signals=decision.signals,
         reasoning=decision.reasoning,
         classifier_source=decision.classifier.source if decision.classifier else "heuristic",
+        mode=mode,
     )
 
 

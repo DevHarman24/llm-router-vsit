@@ -10,6 +10,12 @@ import time
 from dataclasses import dataclass, field
 from typing import Optional
 from functools import lru_cache
+import os
+from router.benchmarks import get_benchmarks
+
+# --- CONFIG ---
+USE_EPOCH_BENCHMARKS = True  # Toggle between True (Epoch ECI) and False (OpenRouter benchmarks.json)
+# --------------
 
 OPENROUTER_MODELS_URL = "https://openrouter.ai/api/v1/models"
 
@@ -22,42 +28,115 @@ TIER2_MIN_PRICE = 0.5    # >= $0.5/M tokens → Tier 2 (mid-range)
 # Note: only include true frontier/reasoning models here — being in this set
 # forces Tier 1 assignment regardless of price, so keep it lean.
 THINKING_MODELS = {
+    # Anthropic
     "anthropic/claude-3-opus",
     "anthropic/claude-3-5-sonnet",
     "anthropic/claude-3-7-sonnet",
+    "anthropic/claude-sonnet-4",
+    "anthropic/claude-opus-4",
+    # OpenAI
     "openai/o1",
     "openai/o3",
+    "openai/o4-mini",
+    "openai/gpt-5",
+    "openai/gpt-5.5",
+    # Google
     "google/gemini-2.0-flash-thinking-exp",
     "google/gemini-2.5-pro",
+    "google/gemini-3",
+    # DeepSeek
     "deepseek/deepseek-r1",
+    # Qwen — thinking variants (mid/low tier)
     "qwen/qwq-32b",
+    "qwen/qwen3-max-thinking",
+    "qwen/qwen3-vl-8b-thinking",
+    "qwen/qwen3-vl-30b-a3b-thinking",
+    "qwen/qwen3-vl-235b-a22b-thinking",
+    "qwen/qwen3-next-80b-a3b-thinking",
+    "qwen/qwen-plus-2025-07-28:thinking",
+    "qwen/qwen3-235b-a22b-thinking",
+    "qwen/qwen3-30b-a3b-thinking",
+    # AllenAI
+    "allenai/olmo-3-32b-think",
+    # Arcee
+    "arcee-ai/trinity-large-thinking",
+    # MoonShot
+    "moonshotai/kimi-k2-thinking",
+    # Sao10K (fine-tuned reasoning models)
+    "sao10k/l3.3-euryale-70b",
+    "sao10k/l3.1-euryale-70b",
+    "sao10k/l3.1-70b-hanami-x1",
+    "sao10k/l3-lunaris-8b",
 }
 
 # Models known for strong coding ability
 CODING_MODELS = {
+    # Anthropic
     "anthropic/claude-3-5-sonnet",
     "anthropic/claude-3-7-sonnet",
+    "anthropic/claude-sonnet-4",
+    "anthropic/claude-opus-4",
+    # OpenAI
     "openai/gpt-4o",
+    "openai/o3",
     "openai/o4-mini",
+    "openai/gpt-5",
+    "openai/gpt-5.5",
+    # DeepSeek
     "deepseek/deepseek-coder-v2",
     "deepseek/deepseek-r1",
+    # Qwen
     "qwen/qwen-2.5-coder-32b-instruct",
+    "qwen/qwen3-coder",
+    # Mistral / Arcee coding specialists (mid tier)
+    "mistralai/codestral",
+    "mistralai/devstral",
+    "arcee-ai/coder-large",
+    # Kwaipilot / MoonShot code specialists
+    "kwaipilot/kat-coder-pro",
+    "moonshotai/kimi-k2.7-code",
+    "moonshotai/kimi-k2-thinking",
+    # Cohere
+    "cohere/north-mini-code",
 }
 
 # Models that support vision/image input
 VISION_MODELS = {
+    # OpenAI
     "openai/gpt-4o",
     "openai/gpt-4o-mini",
+    "openai/gpt-5",
+    "openai/gpt-5.5",
+    # Anthropic
     "anthropic/claude-3-5-sonnet",
     "anthropic/claude-3-7-sonnet",
     "anthropic/claude-3-opus",
     "anthropic/claude-3-haiku",
+    "anthropic/claude-sonnet-4",
+    "anthropic/claude-opus-4",
+    # Google
     "google/gemini-2.0-flash",
     "google/gemini-1.5-pro",
     "google/gemini-2.5-pro",
+    "google/gemini-2.5-flash-image",
+    "google/gemini-3",
+    # Meta
     "meta-llama/llama-3.2-90b-vision-instruct",
     "meta-llama/llama-3.2-11b-vision-instruct",
+    # Qwen vision models (mid/low tier)
     "qwen/qwen2-vl-72b-instruct",
+    "qwen/qwen2.5-vl-72b-instruct",
+    "qwen/qwen3-vl-8b-instruct",
+    "qwen/qwen3-vl-30b-a3b-instruct",
+    "qwen/qwen3-vl-235b-a22b-instruct",
+    "qwen/qwen3-vl-8b-thinking",
+    "qwen/qwen3-vl-30b-a3b-thinking",
+    "qwen/qwen3-vl-235b-a22b-thinking",
+    "qwen/qwen3-vl-32b-instruct",
+    # Nvidia
+    "nvidia/nemotron-nano-12b-v2-vl",
+    # Baidu
+    "baidu/ernie-4.5-vl",
 }
 
 
@@ -159,6 +238,36 @@ _catalog_cache: Optional[list[ModelInfo]] = None
 _cache_timestamp: float = 0
 CACHE_TTL_SECONDS = 3600  # Refresh every 1 hour
 
+_epoch_benchmarks_cache = None
+
+def get_epoch_benchmarks_data() -> dict:
+    global _epoch_benchmarks_cache
+    if _epoch_benchmarks_cache is None:
+        try:
+            path = os.path.join(os.path.dirname(__file__), "epoch_benchmarks.json")
+            with open(path, "r", encoding="utf-8") as f:
+                _epoch_benchmarks_cache = json.load(f)
+        except Exception as e:
+            print(f"[ModelCatalog] Failed to load epoch benchmarks: {e}")
+            _epoch_benchmarks_cache = {}
+    return _epoch_benchmarks_cache
+
+
+def _fuzzy_match_epoch_score(model: ModelInfo, epoch_data: dict) -> float:
+    # Try exact match first
+    if model.name in epoch_data:
+        return epoch_data[model.name].get("eci_score", 50.0)
+        
+    # Try fuzzy match (ignore case and some symbols)
+    m_name = model.name.lower().replace("-", " ").replace(".", "")
+    for k, v in epoch_data.items():
+        k_name = k.lower().replace("-", " ").replace(".", "")
+        if m_name in k_name or k_name in m_name:
+            return v.get("eci_score", 50.0)
+            
+    # Default score if not found
+    return 50.0
+
 
 def get_catalog() -> list[ModelInfo]:
     global _catalog_cache, _cache_timestamp
@@ -171,8 +280,8 @@ def get_catalog() -> list[ModelInfo]:
 
 def get_best_model_for_tier(tier: int, needs_vision: bool = False,
                              needs_thinking: bool = False, needs_coding: bool = False,
-                             min_context: int = 0) -> Optional[ModelInfo]:
-    """Return the best model for a given tier, filtered by capability requirements."""
+                             min_context: int = 0, mode: str = "standard") -> Optional[ModelInfo]:
+    """Return the best model for a given tier, filtered by capability requirements and mode."""
     catalog = get_catalog()
     candidates = [m for m in catalog if m.tier == tier]
 
@@ -196,26 +305,76 @@ def get_best_model_for_tier(tier: int, needs_vision: bool = False,
         if context_candidates:
             candidates = context_candidates
 
+    # Exclude free/meta-router models (price <= 0) — they are not real LLMs
+    # and their zero/negative prices break cheap-mode scoring.
+    # Also exclude insanely expensive models (> $200/M tokens) like o1-pro.
+    # Keep unfiltered list as a fallback so we never return None unnecessarily.
+    real_candidates = [m for m in candidates if 0 < m.price_per_million_tokens <= 200.0]
+    if real_candidates:
+        candidates = real_candidates
+
     if not candidates:
         return None
 
-    # Score candidates to avoid always picking the cheapest
-    # Lower score is better
+    # Score candidates based on mode
     def score_model(m: ModelInfo) -> float:
-        score = m.price_per_million_tokens
-        
-        # Reward larger context windows slightly
-        score -= (m.context_window / 100_000) * 0.05
-        
-        # Reward extra capabilities (nice to have)
-        if m.supports_vision and not needs_vision:
-            score -= 0.02
-        if m.supports_thinking and not needs_thinking:
-            score -= 0.1
-        if m.supports_coding and not needs_coding:
-            score -= 0.05
-            
-        return score
+        # Lower score is better
+        is_best_logic = (mode == "best") or (mode == "standard" and tier == 1)
+        is_cheap_logic = (mode == "cheap")
 
+        if is_cheap_logic:
+            # Cheap logic: optimize purely for lowest cost
+            return m.price_per_million_tokens
+        elif is_best_logic:
+            # Best logic: optimize purely for capability/benchmarks using dynamic data
+            score = 0.0
+            
+            if USE_EPOCH_BENCHMARKS:
+                epoch_data = get_epoch_benchmarks_data()
+                eci_score = _fuzzy_match_epoch_score(m, epoch_data)
+                # ECI scores are usually 0-200. Multiply by a large weight to overcome price.
+                score -= eci_score * 100
+            else:
+                benchmarks = get_benchmarks()
+                # Default to average scores if model is missing from JSON
+                model_scores = benchmarks.get(m.id, {"coding": 50, "reasoning": 50, "vision": 50})
+                
+                # Higher score is better in JSON (0-100), but score_model wants lower value.
+                # So we subtract the benchmark score. Multiply by a large weight to overcome price.
+                if needs_coding:
+                    score -= model_scores.get("coding", 50) * 100
+                elif needs_thinking:
+                    score -= model_scores.get("reasoning", 50) * 100
+                elif needs_vision:
+                    score -= model_scores.get("vision", 50) * 100
+                else:
+                    score -= model_scores.get("reasoning", 50) * 50
+                    
+            # Secondary tie-breakers: larger context is better, higher price as a proxy for model size/capability
+            score -= (m.context_window / 1_000_000) * 10
+            # Cap the price proxy bonus at a small value (e.g. 5 points) so it never overrides a real 1-point benchmark difference (which is 100 points)
+            score -= min(5.0, (m.price_per_million_tokens / 10.0))
+            return score
+        else:
+            # Standard logic (Tier 2/3): Balanced approach scoring price vs capabilities
+            score = m.price_per_million_tokens
+            
+            # Reward larger context windows slightly
+            score -= (m.context_window / 100_000) * 0.05
+            
+            # Reward extra capabilities (nice to have)
+            if m.supports_vision and not needs_vision:
+                score -= 0.02
+            if m.supports_thinking and not needs_thinking:
+                score -= 0.1
+            if m.supports_coding and not needs_coding:
+                score -= 0.05
+                
+            return score
+
+    # First sort alphabetically descending by ID (so e.g., 4.6 comes before 4.5).
+    candidates.sort(key=lambda m: m.id, reverse=True)
+    # Then sort by score (lower is better). Python's stable sort preserves the ID ordering for identical scores.
     candidates.sort(key=score_model)
     return candidates[0]
+

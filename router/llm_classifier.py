@@ -109,7 +109,10 @@ def classify(query: str, heuristic: HeuristicResult,
         client = Groq(api_key=key)
 
         # Build context for the LLM
-        context = f"Query: {query}"
+        # Truncate massively long queries to save tokens and speed up routing
+        # The LLM only needs the intent, not the full document payload
+        truncated_query = query[:2000] + ("..." if len(query) > 2000 else "")
+        context = f"Query: {truncated_query}"
         if heuristic.needs_vision:
             context += "\n[User attached an image]"
 

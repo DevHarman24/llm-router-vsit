@@ -1,0 +1,1642 @@
+{
+  "Claude Fable 5": {
+    "organization": null,
+    "publication_date": "2026-06-09",
+    "eci_score": 162.0,
+    "eci_ci_low": "157.27081177258373",
+    "eci_ci_high": "169.79246418784683",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.5 Pro": {
+    "organization": null,
+    "publication_date": "2026-04-23",
+    "eci_score": 161.01001910494256,
+    "eci_ci_low": "158.42499212971885",
+    "eci_ci_high": "170.6361000986256",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.5": {
+    "organization": null,
+    "publication_date": "2026-04-23",
+    "eci_score": 158.5230816283231,
+    "eci_ci_low": "155.84285709135395",
+    "eci_ci_high": "167.36260886878236",
+    "accessibility": "Unknown"
+  },
+  "Claude Opus 4.8": {
+    "organization": null,
+    "publication_date": "2026-05-28",
+    "eci_score": 158.0796619750362,
+    "eci_ci_low": "154.57711880235647",
+    "eci_ci_high": "166.09132327865683",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.4 Pro": {
+    "organization": null,
+    "publication_date": "2026-03-05",
+    "eci_score": 158.00097758011734,
+    "eci_ci_low": "155.0056359564457",
+    "eci_ci_high": "167.08714515738484",
+    "accessibility": "Unknown"
+  },
+  "Claude Opus 4.7": {
+    "organization": null,
+    "publication_date": "2026-04-16",
+    "eci_score": 156.19090403765352,
+    "eci_ci_low": "153.34969245477893",
+    "eci_ci_high": "163.57711235820506",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.4": {
+    "organization": null,
+    "publication_date": "2026-03-05",
+    "eci_score": 156.14866205610485,
+    "eci_ci_low": "153.11958114773412",
+    "eci_ci_high": "164.19295103334463",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.3 Codex": {
+    "organization": null,
+    "publication_date": "2026-02-05",
+    "eci_score": 155.72289132267673,
+    "eci_ci_low": "152.68917131893892",
+    "eci_ci_high": "163.31968738850344",
+    "accessibility": "Unknown"
+  },
+  "Claude Opus 4.6": {
+    "organization": null,
+    "publication_date": "2026-02-05",
+    "eci_score": 155.5117390859494,
+    "eci_ci_low": "152.3694761279231",
+    "eci_ci_high": "163.255574543961",
+    "accessibility": "Unknown"
+  },
+  "Gemini 3.1 Pro": {
+    "organization": null,
+    "publication_date": "2026-02-19",
+    "eci_score": 155.01913183017336,
+    "eci_ci_low": "151.8977112032016",
+    "eci_ci_high": "163.1373490869297",
+    "accessibility": "Unknown"
+  },
+  "Gemini 3.5 Flash": {
+    "organization": null,
+    "publication_date": "2026-05-19",
+    "eci_score": 154.81553880153413,
+    "eci_ci_low": "152.4340576116508",
+    "eci_ci_high": "162.38893959110152",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.2 Pro": {
+    "organization": null,
+    "publication_date": "2025-12-11",
+    "eci_score": 154.6650039140592,
+    "eci_ci_low": "152.2121867417868",
+    "eci_ci_high": "162.9959343640204",
+    "accessibility": "Unknown"
+  },
+  "Muse Spark": {
+    "organization": null,
+    "publication_date": "2026-04-08",
+    "eci_score": 154.3725078684975,
+    "eci_ci_low": "149.98015268022496",
+    "eci_ci_high": "161.55998296107816",
+    "accessibility": "Unknown"
+  },
+  "Grok 4.20": {
+    "organization": null,
+    "publication_date": "2026-02-17",
+    "eci_score": 154.25997952179853,
+    "eci_ci_low": "148.65713849263756",
+    "eci_ci_high": "161.6844827223169",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.2": {
+    "organization": null,
+    "publication_date": "2025-12-11",
+    "eci_score": 153.6621056500781,
+    "eci_ci_low": "150.66011558063443",
+    "eci_ci_high": "160.3445088705283",
+    "accessibility": "Unknown"
+  },
+  "Claude Sonnet 4.6": {
+    "organization": null,
+    "publication_date": "2026-02-17",
+    "eci_score": 153.32885153854988,
+    "eci_ci_low": "149.96253638634815",
+    "eci_ci_high": "161.60396396013778",
+    "accessibility": "Unknown"
+  },
+  "Gemini 3 Pro": {
+    "organization": null,
+    "publication_date": "2025-11-18",
+    "eci_score": 153.31804186164356,
+    "eci_ci_low": "150.80833934504238",
+    "eci_ci_high": "160.07495767130976",
+    "accessibility": "Unknown"
+  },
+  "Qwen3.7-Max": {
+    "organization": null,
+    "publication_date": "2026-05-19",
+    "eci_score": 153.15356093095025,
+    "eci_ci_low": "149.48368144237878",
+    "eci_ci_high": "160.1860746663786",
+    "accessibility": "Unknown"
+  },
+  "GLM-5.2": {
+    "organization": null,
+    "publication_date": "2026-06-16",
+    "eci_score": 151.70284270083607,
+    "eci_ci_low": "148.7733374702445",
+    "eci_ci_high": "159.0844478002224",
+    "accessibility": "Unknown"
+  },
+  "Kimi K2.6": {
+    "organization": null,
+    "publication_date": "2026-04-20",
+    "eci_score": 151.19773821977418,
+    "eci_ci_low": "148.11216754805787",
+    "eci_ci_high": "158.06985305874326",
+    "accessibility": "Unknown"
+  },
+  "Gemini 3 Flash": {
+    "organization": null,
+    "publication_date": "2025-12-17",
+    "eci_score": 150.67274878893897,
+    "eci_ci_low": "147.51342441658466",
+    "eci_ci_high": "157.70061990086347",
+    "accessibility": "Unknown"
+  },
+  "GLM-5.1": {
+    "organization": null,
+    "publication_date": "2026-04-07",
+    "eci_score": 150.51030513150744,
+    "eci_ci_low": "147.17045712702026",
+    "eci_ci_high": "157.48620036076164",
+    "accessibility": "Unknown"
+  },
+  "GPT-5 Pro": {
+    "organization": null,
+    "publication_date": "2025-10-07",
+    "eci_score": 150.46832685233483,
+    "eci_ci_low": "147.92712058104365",
+    "eci_ci_high": "157.23758898373464",
+    "accessibility": "Unknown"
+  },
+  "Kimi K2.7 Code": {
+    "organization": null,
+    "publication_date": "2026-06-12",
+    "eci_score": 150.02194769843194,
+    "eci_ci_low": "147.16233673802645",
+    "eci_ci_high": "157.3143243737608",
+    "accessibility": "Unknown"
+  },
+  "GPT-5": {
+    "organization": null,
+    "publication_date": "2025-08-07",
+    "eci_score": 150.0,
+    "eci_ci_low": "147.35793863796295",
+    "eci_ci_high": "156.8097810859109",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.1": {
+    "organization": null,
+    "publication_date": "2025-11-13",
+    "eci_score": 149.7674568620738,
+    "eci_ci_low": "146.19730637787626",
+    "eci_ci_high": "156.0746389377091",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-V4-Pro": {
+    "organization": null,
+    "publication_date": "2026-04-24",
+    "eci_score": 149.72180578497475,
+    "eci_ci_low": "146.92736211246358",
+    "eci_ci_high": "155.96143734175155",
+    "accessibility": "Unknown"
+  },
+  "Qwen 3.6 Max (Preview)": {
+    "organization": null,
+    "publication_date": "2026-04-20",
+    "eci_score": 149.64645618023764,
+    "eci_ci_low": "147.21220543510873",
+    "eci_ci_high": "156.51773307901178",
+    "accessibility": "Unknown"
+  },
+  "Claude Opus 4.5": {
+    "organization": null,
+    "publication_date": "2025-11-24",
+    "eci_score": 149.53978188666264,
+    "eci_ci_low": "146.68949049273016",
+    "eci_ci_high": "156.35536219906132",
+    "accessibility": "Unknown"
+  },
+  "Qwen 3.6 Plus": {
+    "organization": null,
+    "publication_date": "2026-04-01",
+    "eci_score": 149.19859611022412,
+    "eci_ci_low": "145.28207594578637",
+    "eci_ci_high": "156.3399450883573",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.4 Mini": {
+    "organization": null,
+    "publication_date": "2026-03-17",
+    "eci_score": 148.91008922993927,
+    "eci_ci_low": "144.80361893247604",
+    "eci_ci_high": "155.55286216515643",
+    "accessibility": "Unknown"
+  },
+  "Grok 4.3 Beta": {
+    "organization": null,
+    "publication_date": "2026-04-17",
+    "eci_score": 148.8777918328195,
+    "eci_ci_low": "145.61987711369807",
+    "eci_ci_high": "155.439948454935",
+    "accessibility": "Unknown"
+  },
+  "Kimi K2.5": {
+    "organization": null,
+    "publication_date": "2026-02-02",
+    "eci_score": 148.30155306247727,
+    "eci_ci_low": "145.208699057437",
+    "eci_ci_high": "154.30057497883598",
+    "accessibility": "Unknown"
+  },
+  "o3-pro": {
+    "organization": null,
+    "publication_date": "2025-06-10",
+    "eci_score": 148.03885154154273,
+    "eci_ci_low": "145.01581576523847",
+    "eci_ci_high": "156.22900567997584",
+    "accessibility": "Unknown"
+  },
+  "MiniMax-M2.5": {
+    "organization": null,
+    "publication_date": "2026-02-12",
+    "eci_score": 147.1643900305905,
+    "eci_ci_low": "138.80887561029988",
+    "eci_ci_high": "153.28160964252052",
+    "accessibility": "Unknown"
+  },
+  "o3": {
+    "organization": null,
+    "publication_date": "2024-12-20",
+    "eci_score": 147.0918477477854,
+    "eci_ci_low": "144.03890200854647",
+    "eci_ci_high": "153.43488578968163",
+    "accessibility": "Unknown"
+  },
+  "Grok 4": {
+    "organization": null,
+    "publication_date": "2025-07-09",
+    "eci_score": 147.08761586220436,
+    "eci_ci_low": "144.36719641049007",
+    "eci_ci_high": "153.58790718262725",
+    "accessibility": "Unknown"
+  },
+  "Qwen 3.5 Plus (hosted 397B-A17B)": {
+    "organization": null,
+    "publication_date": "2026-02-16",
+    "eci_score": 146.90128771840006,
+    "eci_ci_low": "143.82039003101733",
+    "eci_ci_high": "152.5097666625164",
+    "accessibility": "Unknown"
+  },
+  "Claude Sonnet 4.5": {
+    "organization": null,
+    "publication_date": "2025-09-29",
+    "eci_score": 146.7443071211485,
+    "eci_ci_low": "144.0154796230049",
+    "eci_ci_high": "153.09857608652496",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-V3.2": {
+    "organization": null,
+    "publication_date": "2025-12-01",
+    "eci_score": 146.58965453921823,
+    "eci_ci_low": "144.008436821012",
+    "eci_ci_high": "152.58762948162752",
+    "accessibility": "Unknown"
+  },
+  "GPT-5.4 Nano": {
+    "organization": null,
+    "publication_date": "2026-03-17",
+    "eci_score": 146.550363519703,
+    "eci_ci_low": "143.438300505429",
+    "eci_ci_high": "153.40211076014174",
+    "accessibility": "Unknown"
+  },
+  "o4-mini": {
+    "organization": null,
+    "publication_date": "2025-04-16",
+    "eci_score": 146.44675490784277,
+    "eci_ci_low": "142.72098187759133",
+    "eci_ci_high": "153.36425463969883",
+    "accessibility": "Unknown"
+  },
+  "GLM-5": {
+    "organization": null,
+    "publication_date": "2026-02-11",
+    "eci_score": 146.41835166642372,
+    "eci_ci_low": "143.36748171015608",
+    "eci_ci_high": "152.47713132414916",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.5 Pro (Jun 2025)": {
+    "organization": null,
+    "publication_date": "2025-06-05",
+    "eci_score": 146.1139090244569,
+    "eci_ci_low": "143.09387755794316",
+    "eci_ci_high": "153.06964537312743",
+    "accessibility": "Unknown"
+  },
+  "Kimi K2 Thinking": {
+    "organization": null,
+    "publication_date": "2025-11-06",
+    "eci_score": 146.0081015427184,
+    "eci_ci_low": "142.34597502771942",
+    "eci_ci_high": "152.49691070500117",
+    "accessibility": "Unknown"
+  },
+  "GPT-5 mini": {
+    "organization": null,
+    "publication_date": "2025-08-07",
+    "eci_score": 145.75794005877836,
+    "eci_ci_low": "141.88355345866074",
+    "eci_ci_high": "151.19260246199758",
+    "accessibility": "Unknown"
+  },
+  "MiniMax-M2.7": {
+    "organization": null,
+    "publication_date": "2026-03-18",
+    "eci_score": 145.63414625643975,
+    "eci_ci_low": "136.6386479303126",
+    "eci_ci_high": "152.73820724755308",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-V3.2-Exp": {
+    "organization": null,
+    "publication_date": "2025-09-29",
+    "eci_score": 144.8836213822216,
+    "eci_ci_low": "140.85642367201584",
+    "eci_ci_high": "151.3206352559954",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.5 Pro (Mar 2025)": {
+    "organization": null,
+    "publication_date": "2025-03-25",
+    "eci_score": 144.84674127601338,
+    "eci_ci_low": "141.61567688698287",
+    "eci_ci_high": "151.79009128402402",
+    "accessibility": "Unknown"
+  },
+  "Qwen3-235B-A22B-Thinking (Jul 2025)": {
+    "organization": null,
+    "publication_date": "2025-07-25",
+    "eci_score": 144.84661353309207,
+    "eci_ci_low": "141.7702353242429",
+    "eci_ci_high": "152.82660966782842",
+    "accessibility": "Unknown"
+  },
+  "Qwen 3.6 Flash": {
+    "organization": null,
+    "publication_date": "2026-04-26",
+    "eci_score": 144.6594079957066,
+    "eci_ci_low": "141.5973212164851",
+    "eci_ci_high": "151.05031027950335",
+    "accessibility": "Unknown"
+  },
+  "Grok 4 Fast": {
+    "organization": null,
+    "publication_date": "2025-09-19",
+    "eci_score": 144.64488966463855,
+    "eci_ci_low": "141.29302397661814",
+    "eci_ci_high": "152.47588902611923",
+    "accessibility": "Unknown"
+  },
+  "Gemini 3.1 Flash-Lite": {
+    "organization": null,
+    "publication_date": "2026-03-03",
+    "eci_score": 144.40640280793224,
+    "eci_ci_low": "134.8056912689219",
+    "eci_ci_high": "150.39239545737797",
+    "accessibility": "Unknown"
+  },
+  "Claude Opus 4.1": {
+    "organization": null,
+    "publication_date": "2025-08-05",
+    "eci_score": 144.17166268879515,
+    "eci_ci_low": "139.86070920143467",
+    "eci_ci_high": "150.76392783493722",
+    "accessibility": "Unknown"
+  },
+  "Qwen3-Max": {
+    "organization": null,
+    "publication_date": "2025-09-05",
+    "eci_score": 144.12567833529397,
+    "eci_ci_low": "140.51699351014963",
+    "eci_ci_high": "155.80155673024385",
+    "accessibility": "Unknown"
+  },
+  "Qwen 3.5 Flash (hosted 35B-A3B)": {
+    "organization": null,
+    "publication_date": "2026-02-25",
+    "eci_score": 144.0239426217135,
+    "eci_ci_low": "140.2567969328102",
+    "eci_ci_high": "150.78725477593122",
+    "accessibility": "Unknown"
+  },
+  "GLM-4.7": {
+    "organization": null,
+    "publication_date": "2025-12-22",
+    "eci_score": 143.71176377354502,
+    "eci_ci_low": "140.86641909885233",
+    "eci_ci_high": "149.38810609594438",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.5 Flash (Sep 2025)": {
+    "organization": null,
+    "publication_date": "2025-09-25",
+    "eci_score": 143.1189193703935,
+    "eci_ci_low": "139.14758046853783",
+    "eci_ci_high": "150.90840297704784",
+    "accessibility": "Unknown"
+  },
+  "Claude Opus 4": {
+    "organization": null,
+    "publication_date": "2025-05-22",
+    "eci_score": 142.90888696138148,
+    "eci_ci_low": "139.75845016516766",
+    "eci_ci_high": "149.27780920998467",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.5 Pro (May 2025)": {
+    "organization": null,
+    "publication_date": "2025-05-06",
+    "eci_score": 142.82302312101882,
+    "eci_ci_low": "139.08658062269274",
+    "eci_ci_high": "150.60228924182175",
+    "accessibility": "Unknown"
+  },
+  "Claude Haiku 4.5": {
+    "organization": null,
+    "publication_date": "2025-10-15",
+    "eci_score": 142.79008892993517,
+    "eci_ci_low": "139.4032120263347",
+    "eci_ci_high": "148.95401361007748",
+    "accessibility": "Unknown"
+  },
+  "o1": {
+    "organization": null,
+    "publication_date": "2024-12-05",
+    "eci_score": 142.67580294958051,
+    "eci_ci_low": "139.8605143129438",
+    "eci_ci_high": "148.5005259883319",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.5 Flash (May 2025)": {
+    "organization": null,
+    "publication_date": "2025-05-20",
+    "eci_score": 142.22989843552844,
+    "eci_ci_low": "139.7403508643677",
+    "eci_ci_high": "148.40762001910662",
+    "accessibility": "Unknown"
+  },
+  "Claude Sonnet 4": {
+    "organization": null,
+    "publication_date": "2025-05-22",
+    "eci_score": 142.13428010404434,
+    "eci_ci_low": "139.07907047104146",
+    "eci_ci_high": "147.78792199306167",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-R1 (May 2025)": {
+    "organization": null,
+    "publication_date": "2025-05-28",
+    "eci_score": 141.99489020897278,
+    "eci_ci_low": "139.60875699639521",
+    "eci_ci_high": "147.60126620463825",
+    "accessibility": "Unknown"
+  },
+  "Claude 3.7 Sonnet": {
+    "organization": null,
+    "publication_date": "2025-02-24",
+    "eci_score": 141.68919027851246,
+    "eci_ci_low": "138.91089049172803",
+    "eci_ci_high": "148.03529856973097",
+    "accessibility": "Unknown"
+  },
+  "o3-mini": {
+    "organization": null,
+    "publication_date": "2025-01-31",
+    "eci_score": 141.32987379303194,
+    "eci_ci_low": "138.17724862743708",
+    "eci_ci_high": "147.66970111446489",
+    "accessibility": "Unknown"
+  },
+  "Grok-3 mini": {
+    "organization": null,
+    "publication_date": "2025-02-19",
+    "eci_score": 140.99917487898608,
+    "eci_ci_low": "138.05140348178602",
+    "eci_ci_high": "147.35577011344705",
+    "accessibility": "Unknown"
+  },
+  "Kimi K2 (Sep 2025)": {
+    "organization": null,
+    "publication_date": "2025-07-11",
+    "eci_score": 140.9793520001673,
+    "eci_ci_low": "136.9068140523158",
+    "eci_ci_high": "147.10862099249152",
+    "accessibility": "Unknown"
+  },
+  "GLM-4.6": {
+    "organization": null,
+    "publication_date": "2025-09-30",
+    "eci_score": 140.8544227868761,
+    "eci_ci_low": "135.64153581245665",
+    "eci_ci_high": "146.19827080483722",
+    "accessibility": "Unknown"
+  },
+  "GPT-5 nano": {
+    "organization": null,
+    "publication_date": "2025-08-07",
+    "eci_score": 140.793065954478,
+    "eci_ci_low": "136.1680064890654",
+    "eci_ci_high": "145.788437413737",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.5 Flash (Apr 2025)": {
+    "organization": null,
+    "publication_date": "2025-04-17",
+    "eci_score": 140.58818632561005,
+    "eci_ci_low": "136.55083800996186",
+    "eci_ci_high": "146.2152135501393",
+    "accessibility": "Unknown"
+  },
+  "gpt-oss-120b": {
+    "organization": null,
+    "publication_date": "2025-08-05",
+    "eci_score": 140.49711934771898,
+    "eci_ci_low": "135.84671637087294",
+    "eci_ci_high": "146.81632808152003",
+    "accessibility": "Unknown"
+  },
+  "Kimi K2 (Jul 2025)": {
+    "organization": null,
+    "publication_date": "2025-07-11",
+    "eci_score": 140.349494799966,
+    "eci_ci_low": "137.1052401443093",
+    "eci_ci_high": "146.52770639339363",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.5 Flash (Jun 2025)": {
+    "organization": null,
+    "publication_date": "2025-06-17",
+    "eci_score": 140.23759786461346,
+    "eci_ci_low": "136.76141456240026",
+    "eci_ci_high": "146.29046082551156",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-R1": {
+    "organization": null,
+    "publication_date": "2025-01-20",
+    "eci_score": 139.65159873918913,
+    "eci_ci_low": "137.0824418566831",
+    "eci_ci_high": "145.57656899225418",
+    "accessibility": "Unknown"
+  },
+  "Qwen3-235B-A22B": {
+    "organization": null,
+    "publication_date": "2025-04-28",
+    "eci_score": 139.55074894977665,
+    "eci_ci_low": "134.85495614798117",
+    "eci_ci_high": "145.42679832676367",
+    "accessibility": "Unknown"
+  },
+  "Grok 3": {
+    "organization": null,
+    "publication_date": "2025-02-17",
+    "eci_score": 139.00768084619494,
+    "eci_ci_low": "136.47876570668984",
+    "eci_ci_high": "144.5127452491166",
+    "accessibility": "Unknown"
+  },
+  "Qwen3-235B-A22B-Instruct (Jul 2025)": {
+    "organization": null,
+    "publication_date": "2025-07-25",
+    "eci_score": 138.9351221086016,
+    "eci_ci_low": "134.90927610676488",
+    "eci_ci_high": "144.046421803402",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-V3.1": {
+    "organization": null,
+    "publication_date": "2025-08-21",
+    "eci_score": 138.74550644533937,
+    "eci_ci_low": "134.8254128937665",
+    "eci_ci_high": "146.45254167626922",
+    "accessibility": "Unknown"
+  },
+  "GPT-4.5": {
+    "organization": null,
+    "publication_date": "2025-02-27",
+    "eci_score": 137.52459906388052,
+    "eci_ci_low": "134.55772278251064",
+    "eci_ci_high": "142.19695174991338",
+    "accessibility": "Unknown"
+  },
+  "GPT-4.1": {
+    "organization": null,
+    "publication_date": "2025-04-14",
+    "eci_score": 137.43484187221165,
+    "eci_ci_low": "134.56512911575462",
+    "eci_ci_high": "142.38915677193177",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-V3 (Mar 2025)": {
+    "organization": null,
+    "publication_date": "2025-03-24",
+    "eci_score": 137.02905668981506,
+    "eci_ci_low": "134.73274941928003",
+    "eci_ci_high": "142.2517975455654",
+    "accessibility": "Unknown"
+  },
+  "o1-mini": {
+    "organization": null,
+    "publication_date": "2024-09-12",
+    "eci_score": 136.5197140194027,
+    "eci_ci_low": "134.28257434362598",
+    "eci_ci_high": "141.69821488111913",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.0 Flash Thinking (Jan 2025)": {
+    "organization": null,
+    "publication_date": "2025-01-21",
+    "eci_score": 136.2309589856963,
+    "eci_ci_low": "131.1459108772302",
+    "eci_ci_high": "141.49122201420855",
+    "accessibility": "Unknown"
+  },
+  "o1-preview": {
+    "organization": null,
+    "publication_date": "2024-09-12",
+    "eci_score": 135.80318470737575,
+    "eci_ci_low": "132.11952192343918",
+    "eci_ci_high": "141.93231877906516",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.0 Flash (Feb 2025)": {
+    "organization": null,
+    "publication_date": "2024-12-11",
+    "eci_score": 135.77351484777088,
+    "eci_ci_low": "133.25314708419384",
+    "eci_ci_high": "141.1214300377282",
+    "accessibility": "Unknown"
+  },
+  "GPT-4.1 mini": {
+    "organization": null,
+    "publication_date": "2025-04-14",
+    "eci_score": 135.76693504374984,
+    "eci_ci_low": "132.37957676112913",
+    "eci_ci_high": "141.1746018891528",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.0 Pro": {
+    "organization": null,
+    "publication_date": "2024-12-11",
+    "eci_score": 135.6065230121031,
+    "eci_ci_low": "131.48724755477275",
+    "eci_ci_high": "140.9468001680756",
+    "accessibility": "Unknown"
+  },
+  "Mistral Medium 3": {
+    "organization": null,
+    "publication_date": "2025-05-07",
+    "eci_score": 135.2655063602277,
+    "eci_ci_low": "130.48836838652713",
+    "eci_ci_high": "139.9192552646653",
+    "accessibility": "Unknown"
+  },
+  "Gemini 2.0 Flash (Dec 2024)": {
+    "organization": null,
+    "publication_date": "2024-12-11",
+    "eci_score": 135.11108457349985,
+    "eci_ci_low": "124.13426005683472",
+    "eci_ci_high": "139.51536581773178",
+    "accessibility": "Unknown"
+  },
+  "Claude 3.5 Sonnet (October 2024)": {
+    "organization": null,
+    "publication_date": "2024-10-22",
+    "eci_score": 134.28810748976125,
+    "eci_ci_low": "130.86838208442953",
+    "eci_ci_high": "142.59043809987378",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-Max": {
+    "organization": null,
+    "publication_date": "2025-01-25",
+    "eci_score": 133.39313277071048,
+    "eci_ci_low": "129.9298578049526",
+    "eci_ci_high": "138.7925025127611",
+    "accessibility": "Unknown"
+  },
+  "Magistral Small 1.1": {
+    "organization": null,
+    "publication_date": "2025-06-10",
+    "eci_score": 133.0482810742568,
+    "eci_ci_low": "128.1704069860096",
+    "eci_ci_high": "138.2765303665009",
+    "accessibility": "Unknown"
+  },
+  "Llama 4 Maverick": {
+    "organization": null,
+    "publication_date": "2025-04-05",
+    "eci_score": 133.03237735913405,
+    "eci_ci_low": "129.63598284629913",
+    "eci_ci_high": "137.5413511455497",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-V3": {
+    "organization": null,
+    "publication_date": "2024-12-24",
+    "eci_score": 132.98864335528626,
+    "eci_ci_low": "129.195218924546",
+    "eci_ci_high": "138.29140514431077",
+    "accessibility": "Unknown"
+  },
+  "Gemini 1.5 Pro (Sept 2024)": {
+    "organization": null,
+    "publication_date": "2024-09-24",
+    "eci_score": 132.70623720508902,
+    "eci_ci_low": "129.89194078739422",
+    "eci_ci_high": "137.2750891167915",
+    "accessibility": "Unknown"
+  },
+  "Gemma 3 27B": {
+    "organization": null,
+    "publication_date": "2025-03-12",
+    "eci_score": 131.06730713062797,
+    "eci_ci_low": "126.10876730674713",
+    "eci_ci_high": "135.8555120298419",
+    "accessibility": "Unknown"
+  },
+  "Phi-4": {
+    "organization": null,
+    "publication_date": "2024-12-12",
+    "eci_score": 131.0367440994943,
+    "eci_ci_low": "126.71295710826243",
+    "eci_ci_high": "134.80132746969014",
+    "accessibility": "Unknown"
+  },
+  "GPT-4.1 nano": {
+    "organization": null,
+    "publication_date": "2025-04-14",
+    "eci_score": 130.86065776002002,
+    "eci_ci_low": "127.0473158476649",
+    "eci_ci_high": "135.58947292977214",
+    "accessibility": "Unknown"
+  },
+  "Grok-2 (Dec 2024)": {
+    "organization": null,
+    "publication_date": "2024-08-13",
+    "eci_score": 130.7745784463587,
+    "eci_ci_low": "127.25849560783507",
+    "eci_ci_high": "134.5473157681671",
+    "accessibility": "Unknown"
+  },
+  "Llama 4 Scout": {
+    "organization": null,
+    "publication_date": "2025-04-05",
+    "eci_score": 130.54386994620683,
+    "eci_ci_low": "127.15868794290145",
+    "eci_ci_high": "135.3411807079673",
+    "accessibility": "Unknown"
+  },
+  "Gemini 1.5 Flash (Sep 2024)": {
+    "organization": null,
+    "publication_date": "2024-05-10",
+    "eci_score": 130.36804218763845,
+    "eci_ci_low": "126.1341354219123",
+    "eci_ci_high": "134.3680559146513",
+    "accessibility": "Unknown"
+  },
+  "Claude 3.5 Sonnet": {
+    "organization": null,
+    "publication_date": "2024-06-20",
+    "eci_score": 130.0,
+    "eci_ci_low": "126.80082370603391",
+    "eci_ci_high": "135.07087383723527",
+    "accessibility": "Unknown"
+  },
+  "GPT-4o (Nov 2024)": {
+    "organization": null,
+    "publication_date": "2024-05-13",
+    "eci_score": 129.27497069184986,
+    "eci_ci_low": "126.01154615804145",
+    "eci_ci_high": "134.00484662521768",
+    "accessibility": "Unknown"
+  },
+  "GPT-4o (Aug 2024)": {
+    "organization": null,
+    "publication_date": "2024-05-13",
+    "eci_score": 129.16745727639295,
+    "eci_ci_low": "126.00426832042515",
+    "eci_ci_high": "133.80548766393392",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-72B": {
+    "organization": null,
+    "publication_date": "2024-09-19",
+    "eci_score": 129.09888282564853,
+    "eci_ci_low": "124.04587132168155",
+    "eci_ci_high": "132.3809999151863",
+    "accessibility": "Unknown"
+  },
+  "Llama 3.1-405B": {
+    "organization": null,
+    "publication_date": "2024-07-23",
+    "eci_score": 128.98843481584487,
+    "eci_ci_low": "125.59228304024307",
+    "eci_ci_high": "132.72236314628958",
+    "accessibility": "Unknown"
+  },
+  "GPT-4o (May 2024)": {
+    "organization": null,
+    "publication_date": "2024-05-13",
+    "eci_score": 128.81822846609384,
+    "eci_ci_low": "126.11525976846383",
+    "eci_ci_high": "133.059683667769",
+    "accessibility": "Unknown"
+  },
+  "Mistral Large 2 (Nov 2024)": {
+    "organization": null,
+    "publication_date": "2024-07-24",
+    "eci_score": 128.79796512922397,
+    "eci_ci_low": "125.58372627114318",
+    "eci_ci_high": "132.85797655148616",
+    "accessibility": "Unknown"
+  },
+  "Mistral Small 3.1": {
+    "organization": null,
+    "publication_date": "2025-03-17",
+    "eci_score": 127.73793462514932,
+    "eci_ci_low": "124.91913578148161",
+    "eci_ci_high": "131.47450841466062",
+    "accessibility": "Unknown"
+  },
+  "GPT-4 Turbo (Apr 2024)": {
+    "organization": null,
+    "publication_date": "2024-04-09",
+    "eci_score": 127.58894900033914,
+    "eci_ci_low": "124.54444908122059",
+    "eci_ci_high": "131.41768207438457",
+    "accessibility": "Unknown"
+  },
+  "Mistral Large 2 (Jul 2024)": {
+    "organization": null,
+    "publication_date": "2024-07-24",
+    "eci_score": 127.54125875757876,
+    "eci_ci_low": "124.35134342283443",
+    "eci_ci_high": "131.1262511011639",
+    "accessibility": "Unknown"
+  },
+  "Claude 3.5 Haiku": {
+    "organization": null,
+    "publication_date": "2024-10-22",
+    "eci_score": 127.49481730708112,
+    "eci_ci_low": "122.58126665684792",
+    "eci_ci_high": "132.5459035480942",
+    "accessibility": "Unknown"
+  },
+  "Llama 3.3 70B": {
+    "organization": null,
+    "publication_date": "2024-12-06",
+    "eci_score": 127.49236538434127,
+    "eci_ci_low": "124.37789201421499",
+    "eci_ci_high": "132.8443917883828",
+    "accessibility": "Unknown"
+  },
+  "Gemini 1.5 Pro (May 2024)": {
+    "organization": null,
+    "publication_date": "2024-05-14",
+    "eci_score": 127.18754142650569,
+    "eci_ci_low": "124.24853577339151",
+    "eci_ci_high": "132.78071678619116",
+    "accessibility": "Unknown"
+  },
+  "GPT-4o mini": {
+    "organization": null,
+    "publication_date": "2024-07-18",
+    "eci_score": 126.93276175987515,
+    "eci_ci_low": "122.30945687912586",
+    "eci_ci_high": "130.5431401277349",
+    "accessibility": "Unknown"
+  },
+  "Claude 3 Opus": {
+    "organization": null,
+    "publication_date": "2024-03-04",
+    "eci_score": 126.90927473390937,
+    "eci_ci_low": "124.50027786202838",
+    "eci_ci_high": "132.33921392703581",
+    "accessibility": "Unknown"
+  },
+  "GPT-4 (Mar 2023)": {
+    "organization": null,
+    "publication_date": "2023-03-15",
+    "eci_score": 125.91316881150104,
+    "eci_ci_low": "122.33980881551228",
+    "eci_ci_high": "133.20890072911016",
+    "accessibility": "Unknown"
+  },
+  "Llama 3.2 90B": {
+    "organization": null,
+    "publication_date": "2024-09-24",
+    "eci_score": 125.69072094217351,
+    "eci_ci_low": "122.40898777263828",
+    "eci_ci_high": "128.95167693923372",
+    "accessibility": "Unknown"
+  },
+  "Llama 3.1-70B": {
+    "organization": null,
+    "publication_date": "2024-07-23",
+    "eci_score": 125.49897961319897,
+    "eci_ci_low": "122.3371691344452",
+    "eci_ci_high": "129.3637209969015",
+    "accessibility": "Unknown"
+  },
+  "Qwen2-72B": {
+    "organization": null,
+    "publication_date": "2024-06-07",
+    "eci_score": 125.46192274366436,
+    "eci_ci_low": "121.49625448458903",
+    "eci_ci_high": "128.6524026345353",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-V2 (MoE-236B, May 2024)": {
+    "organization": null,
+    "publication_date": "2024-05-07",
+    "eci_score": 124.56156053276135,
+    "eci_ci_low": "120.89334153528564",
+    "eci_ci_high": "127.43382021998377",
+    "accessibility": "Unknown"
+  },
+  "Amazon Nova Pro": {
+    "organization": null,
+    "publication_date": "2024-12-03",
+    "eci_score": 123.85689318713757,
+    "eci_ci_low": "113.7190013710352",
+    "eci_ci_high": "127.93191907717853",
+    "accessibility": "Unknown"
+  },
+  "Llama 3-70B": {
+    "organization": null,
+    "publication_date": "2024-04-18",
+    "eci_score": 122.59457612297291,
+    "eci_ci_low": "120.42133438733649",
+    "eci_ci_high": "126.75795368988464",
+    "accessibility": "Unknown"
+  },
+  "Gemini 1.5 Flash (May 2024)": {
+    "organization": null,
+    "publication_date": "2024-05-10",
+    "eci_score": 122.52491419885418,
+    "eci_ci_low": "119.80612947806603",
+    "eci_ci_high": "126.01135590043474",
+    "accessibility": "Unknown"
+  },
+  "Gemma 2 27B": {
+    "organization": null,
+    "publication_date": "2024-06-24",
+    "eci_score": 122.45107400092976,
+    "eci_ci_low": "118.73518564760529",
+    "eci_ci_high": "124.82990148149052",
+    "accessibility": "Unknown"
+  },
+  "GPT-4 (Jun 2023)": {
+    "organization": null,
+    "publication_date": "2023-06-13",
+    "eci_score": 121.87129071877983,
+    "eci_ci_low": "118.45445046878356",
+    "eci_ci_high": "125.27273630317451",
+    "accessibility": "Unknown"
+  },
+  "phi-3-small 7.4B": {
+    "organization": null,
+    "publication_date": "2024-04-23",
+    "eci_score": 121.60924098061069,
+    "eci_ci_low": "118.25558470018255",
+    "eci_ci_high": "125.25099820144246",
+    "accessibility": "Unknown"
+  },
+  "Mixtral 8x22B": {
+    "organization": null,
+    "publication_date": "2024-04-17",
+    "eci_score": 121.24467266807986,
+    "eci_ci_low": "113.26836546477956",
+    "eci_ci_high": "124.39142592365937",
+    "accessibility": "Unknown"
+  },
+  "Claude Instant": {
+    "organization": null,
+    "publication_date": "2023-08-09",
+    "eci_score": 121.07799396710539,
+    "eci_ci_low": "117.20015937283965",
+    "eci_ci_high": "126.2506608062682",
+    "accessibility": "Unknown"
+  },
+  "phi-3-medium 14B": {
+    "organization": null,
+    "publication_date": "2024-04-23",
+    "eci_score": 121.04504398760024,
+    "eci_ci_low": "118.25869670475174",
+    "eci_ci_high": "124.26367284597623",
+    "accessibility": "Unknown"
+  },
+  "Mistral Large": {
+    "organization": null,
+    "publication_date": "2024-02-26",
+    "eci_score": 120.9928145644053,
+    "eci_ci_low": "115.7950743879488",
+    "eci_ci_high": "125.65576579327978",
+    "accessibility": "Unknown"
+  },
+  "Claude 3 Sonnet": {
+    "organization": null,
+    "publication_date": "2024-03-04",
+    "eci_score": 119.85613251354437,
+    "eci_ci_low": "114.88406775176347",
+    "eci_ci_high": "124.52302489455286",
+    "accessibility": "Unknown"
+  },
+  "Claude 2": {
+    "organization": null,
+    "publication_date": "2023-07-11",
+    "eci_score": 119.55987595574767,
+    "eci_ci_low": "115.96907714287227",
+    "eci_ci_high": "125.51573964767482",
+    "accessibility": "Unknown"
+  },
+  "Gemma 2 9B": {
+    "organization": null,
+    "publication_date": "2024-06-24",
+    "eci_score": 119.55244537784007,
+    "eci_ci_low": "114.64075082567979",
+    "eci_ci_high": "123.5192155392768",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-Coder-32B": {
+    "organization": null,
+    "publication_date": "2024-09-18",
+    "eci_score": 119.23226062946429,
+    "eci_ci_low": "111.99111903344728",
+    "eci_ci_high": "125.80348451832391",
+    "accessibility": "Unknown"
+  },
+  "Mistral NeMo": {
+    "organization": null,
+    "publication_date": "2024-07-18",
+    "eci_score": 118.35418838295173,
+    "eci_ci_low": "114.53552322917035",
+    "eci_ci_high": "124.13517191954965",
+    "accessibility": "Unknown"
+  },
+  "Claude 2.1": {
+    "organization": null,
+    "publication_date": "2023-11-21",
+    "eci_score": 118.29458054134652,
+    "eci_ci_low": "114.24653827987675",
+    "eci_ci_high": "122.01530741708297",
+    "accessibility": "Unknown"
+  },
+  "GPT-3.5 Turbo (Nov 2023)": {
+    "organization": null,
+    "publication_date": "2023-06-13",
+    "eci_score": 118.2477489260331,
+    "eci_ci_low": "112.10085298991493",
+    "eci_ci_high": "122.43794528936995",
+    "accessibility": "Unknown"
+  },
+  "Mixtral 8x7B": {
+    "organization": null,
+    "publication_date": "2023-12-11",
+    "eci_score": 118.09532333073993,
+    "eci_ci_low": "114.98277272776409",
+    "eci_ci_high": "121.10562167824558",
+    "accessibility": "Unknown"
+  },
+  "Claude 3 Haiku": {
+    "organization": null,
+    "publication_date": "2024-03-04",
+    "eci_score": 117.59261115662599,
+    "eci_ci_low": "113.36683393986527",
+    "eci_ci_high": "121.79455860126643",
+    "accessibility": "Unknown"
+  },
+  "Yi-34B": {
+    "organization": null,
+    "publication_date": "2023-11-02",
+    "eci_score": 117.10745728672299,
+    "eci_ci_low": "113.3070256226635",
+    "eci_ci_high": "120.57368711695362",
+    "accessibility": "Unknown"
+  },
+  "phi-3-mini 3.8B": {
+    "organization": null,
+    "publication_date": "2024-04-23",
+    "eci_score": 117.0981913374462,
+    "eci_ci_low": "112.30059758981173",
+    "eci_ci_high": "121.30675120926345",
+    "accessibility": "Unknown"
+  },
+  "Gemini 1.0 Pro": {
+    "organization": null,
+    "publication_date": "2023-12-06",
+    "eci_score": 116.97393775876733,
+    "eci_ci_low": "114.25310014412179",
+    "eci_ci_high": "121.2954565656705",
+    "accessibility": "Unknown"
+  },
+  "Stable Beluga 2": {
+    "organization": null,
+    "publication_date": "2023-07-20",
+    "eci_score": 116.8618907295357,
+    "eci_ci_low": "112.32375571380676",
+    "eci_ci_high": "119.9394772998716",
+    "accessibility": "Unknown"
+  },
+  "Llama 3-8B": {
+    "organization": null,
+    "publication_date": "2024-04-18",
+    "eci_score": 116.39084711658802,
+    "eci_ci_low": "112.56445383704936",
+    "eci_ci_high": "118.43548961006466",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-Coder-14B": {
+    "organization": null,
+    "publication_date": "2024-09-18",
+    "eci_score": 116.13112187684581,
+    "eci_ci_low": "110.47202790938859",
+    "eci_ci_high": "122.75428961453576",
+    "accessibility": "Unknown"
+  },
+  "Llama 3.1-8B": {
+    "organization": null,
+    "publication_date": "2024-07-23",
+    "eci_score": 115.38459091796204,
+    "eci_ci_low": "106.32411125819887",
+    "eci_ci_high": "122.76581389761789",
+    "accessibility": "Unknown"
+  },
+  "PaLM 2-L": {
+    "organization": null,
+    "publication_date": "2023-05-17",
+    "eci_score": 114.81566105677634,
+    "eci_ci_low": "109.26100016114094",
+    "eci_ci_high": "128.3101671077738",
+    "accessibility": "Unknown"
+  },
+  "GPT-3.5 Turbo (Jan 2024)": {
+    "organization": null,
+    "publication_date": "2023-06-13",
+    "eci_score": 114.35168663086814,
+    "eci_ci_low": "103.57446680098272",
+    "eci_ci_high": "118.49254389278128",
+    "accessibility": "Unknown"
+  },
+  "Llama 2-70B": {
+    "organization": null,
+    "publication_date": "2023-07-18",
+    "eci_score": 113.67265541592649,
+    "eci_ci_low": "110.29545809424198",
+    "eci_ci_high": "117.00246602364275",
+    "accessibility": "Unknown"
+  },
+  "GPT-3.5 Turbo (Jun 2023)": {
+    "organization": null,
+    "publication_date": "2023-06-13",
+    "eci_score": 113.07001878272452,
+    "eci_ci_low": "109.29484716612434",
+    "eci_ci_high": "119.61161520165085",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-Coder (7B)": {
+    "organization": null,
+    "publication_date": "2024-09-18",
+    "eci_score": 112.8533483530862,
+    "eci_ci_low": "105.67604874005849",
+    "eci_ci_high": "118.08259633090144",
+    "accessibility": "Unknown"
+  },
+  "Qwen-14B": {
+    "organization": null,
+    "publication_date": "2023-09-24",
+    "eci_score": 112.74182971835005,
+    "eci_ci_low": "107.42910050439131",
+    "eci_ci_high": "117.44995417537041",
+    "accessibility": "Unknown"
+  },
+  "Mistral 7B v0.1": {
+    "organization": null,
+    "publication_date": "2023-10-10",
+    "eci_score": 111.91786027897147,
+    "eci_ci_low": "108.66067736564294",
+    "eci_ci_high": "115.07719779296224",
+    "accessibility": "Unknown"
+  },
+  "Falcon-180B": {
+    "organization": null,
+    "publication_date": "2023-09-06",
+    "eci_score": 111.86412774671294,
+    "eci_ci_low": "107.23386683384118",
+    "eci_ci_high": "118.93822300945253",
+    "accessibility": "Unknown"
+  },
+  "internlm-20b": {
+    "organization": null,
+    "publication_date": "2023-09-18",
+    "eci_score": 111.80142693221939,
+    "eci_ci_low": "107.49411147702145",
+    "eci_ci_high": "115.2472245268604",
+    "accessibility": "Unknown"
+  },
+  "Gemma 7B": {
+    "organization": null,
+    "publication_date": "2024-02-21",
+    "eci_score": 111.70161140822799,
+    "eci_ci_low": "107.48825351303044",
+    "eci_ci_high": "115.00902416445997",
+    "accessibility": "Unknown"
+  },
+  "LLaMA-65B": {
+    "organization": null,
+    "publication_date": "2023-02-24",
+    "eci_score": 109.86527726159898,
+    "eci_ci_low": "106.59792084866704",
+    "eci_ci_high": "113.51754952032192",
+    "accessibility": "Unknown"
+  },
+  "Falcon 2 11B": {
+    "organization": null,
+    "publication_date": "2024-05-09",
+    "eci_score": 109.23600712993122,
+    "eci_ci_low": "106.36584334792188",
+    "eci_ci_high": "116.25072868050323",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek-Coder-V2-Lite-Base": {
+    "organization": null,
+    "publication_date": "2024-06-13",
+    "eci_score": 108.5696353594426,
+    "eci_ci_low": "104.7563565870686",
+    "eci_ci_high": "112.44721684607737",
+    "accessibility": "Unknown"
+  },
+  "PaLM 2-M": {
+    "organization": null,
+    "publication_date": "2023-05-17",
+    "eci_score": 108.0165152822681,
+    "eci_ci_low": "103.40323133646542",
+    "eci_ci_high": "117.9962193045475",
+    "accessibility": "Unknown"
+  },
+  "Phi-2": {
+    "organization": null,
+    "publication_date": "2023-12-12",
+    "eci_score": 107.58971987586692,
+    "eci_ci_low": "91.54186309537477",
+    "eci_ci_high": "112.41850195001345",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-Coder-3B": {
+    "organization": null,
+    "publication_date": "2024-09-18",
+    "eci_score": 107.42367092627407,
+    "eci_ci_low": "98.69997498035383",
+    "eci_ci_high": "115.5384007189902",
+    "accessibility": "Unknown"
+  },
+  "Nemotron-4 15B": {
+    "organization": null,
+    "publication_date": "2024-02-27",
+    "eci_score": 107.4013292863758,
+    "eci_ci_low": "103.67106656191419",
+    "eci_ci_high": "113.67273005335436",
+    "accessibility": "Unknown"
+  },
+  "Yi-9B": {
+    "organization": null,
+    "publication_date": "2024-03-01",
+    "eci_score": 107.30166254999251,
+    "eci_ci_low": "101.33732837355515",
+    "eci_ci_high": "115.66360935756632",
+    "accessibility": "Unknown"
+  },
+  "LLaMA-33B": {
+    "organization": null,
+    "publication_date": "2023-02-27",
+    "eci_score": 107.08705590567693,
+    "eci_ci_low": "104.46888988297619",
+    "eci_ci_high": "110.84776408322902",
+    "accessibility": "Unknown"
+  },
+  "Qwen-7B": {
+    "organization": null,
+    "publication_date": "2023-09-28",
+    "eci_score": 106.48245525862544,
+    "eci_ci_low": "100.00060423388085",
+    "eci_ci_high": "111.23961337351909",
+    "accessibility": "Unknown"
+  },
+  "PaLM 2-S": {
+    "organization": null,
+    "publication_date": "2023-05-17",
+    "eci_score": 105.87790354205092,
+    "eci_ci_low": "101.74105517831234",
+    "eci_ci_high": "115.22985052792502",
+    "accessibility": "Unknown"
+  },
+  "Llama 2-13B": {
+    "organization": null,
+    "publication_date": "2023-07-18",
+    "eci_score": 105.83358371325832,
+    "eci_ci_low": "102.466999635443",
+    "eci_ci_high": "109.76419498531995",
+    "accessibility": "Unknown"
+  },
+  "Llama 2-34B": {
+    "organization": null,
+    "publication_date": "2023-07-18",
+    "eci_score": 104.86818494021166,
+    "eci_ci_low": "101.9353909697837",
+    "eci_ci_high": "109.05524343369547",
+    "accessibility": "Unknown"
+  },
+  "StarCoder 2 15B": {
+    "organization": null,
+    "publication_date": "2024-02-29",
+    "eci_score": 104.6526921869687,
+    "eci_ci_low": "96.70996850142676",
+    "eci_ci_high": "111.29113367325465",
+    "accessibility": "Unknown"
+  },
+  "Yi 6B": {
+    "organization": null,
+    "publication_date": "2023-11-02",
+    "eci_score": 104.42708822049886,
+    "eci_ci_low": "101.23213820156487",
+    "eci_ci_high": "108.48060639963231",
+    "accessibility": "Unknown"
+  },
+  "Falcon-40B": {
+    "organization": null,
+    "publication_date": "2023-03-15",
+    "eci_score": 104.11019608354249,
+    "eci_ci_low": "100.7132788288461",
+    "eci_ci_high": "108.45009678943727",
+    "accessibility": "Unknown"
+  },
+  "Baichuan2-13B": {
+    "organization": null,
+    "publication_date": "2023-09-06",
+    "eci_score": 102.84109952447939,
+    "eci_ci_low": "94.95275196909596",
+    "eci_ci_high": "108.80898761743137",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-Coder (1.5B)": {
+    "organization": null,
+    "publication_date": "2024-09-18",
+    "eci_score": 102.62942976379757,
+    "eci_ci_low": "90.19856440036969",
+    "eci_ci_high": "110.14414641995255",
+    "accessibility": "Unknown"
+  },
+  "internlm-7b": {
+    "organization": null,
+    "publication_date": "2023-07-05",
+    "eci_score": 102.48999286674456,
+    "eci_ci_low": "95.55385718826685",
+    "eci_ci_high": "107.16385389111664",
+    "accessibility": "Unknown"
+  },
+  "INTELLECT-1": {
+    "organization": null,
+    "publication_date": "2024-11-29",
+    "eci_score": 100.48360353944855,
+    "eci_ci_low": "96.57068759537755",
+    "eci_ci_high": "103.15385813685825",
+    "accessibility": "Unknown"
+  },
+  "MPT-30B": {
+    "organization": null,
+    "publication_date": "2023-06-22",
+    "eci_score": 100.28360058211376,
+    "eci_ci_low": "97.91959013427314",
+    "eci_ci_high": "103.57363815171078",
+    "accessibility": "Unknown"
+  },
+  "LLaMA-13B": {
+    "organization": null,
+    "publication_date": "2023-02-27",
+    "eci_score": 100.20653841249677,
+    "eci_ci_low": "97.26370496291828",
+    "eci_ci_high": "104.26577265992704",
+    "accessibility": "Unknown"
+  },
+  "Llama 2-7B": {
+    "organization": null,
+    "publication_date": "2023-07-18",
+    "eci_score": 98.6784658583488,
+    "eci_ci_low": "94.8362458026424",
+    "eci_ci_high": "102.9380628226808",
+    "accessibility": "Unknown"
+  },
+  "chatglm2-6b": {
+    "organization": null,
+    "publication_date": "2023-06-24",
+    "eci_score": 98.52116407527629,
+    "eci_ci_low": "80.28752854816882",
+    "eci_ci_high": "103.71386130633617",
+    "accessibility": "Unknown"
+  },
+  "LLaMA-7B": {
+    "organization": null,
+    "publication_date": "2023-02-24",
+    "eci_score": 96.29576946887957,
+    "eci_ci_low": "91.38830268582393",
+    "eci_ci_high": "100.62257803021622",
+    "accessibility": "Unknown"
+  },
+  "Baichuan 2-7B": {
+    "organization": null,
+    "publication_date": "2023-09-20",
+    "eci_score": 95.92439396455833,
+    "eci_ci_low": "88.40060212110465",
+    "eci_ci_high": "102.44686192030281",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek Coder 33B": {
+    "organization": null,
+    "publication_date": "2024-01-25",
+    "eci_score": 95.91248031057916,
+    "eci_ci_low": "88.95039413804778",
+    "eci_ci_high": "99.66779243790637",
+    "accessibility": "Unknown"
+  },
+  "Falcon-7B": {
+    "organization": null,
+    "publication_date": "2023-04-24",
+    "eci_score": 94.68937339690545,
+    "eci_ci_low": "89.44712558668026",
+    "eci_ci_high": "100.06034698487325",
+    "accessibility": "Unknown"
+  },
+  "CodeQwen1.5-7B": {
+    "organization": null,
+    "publication_date": "2024-04-15",
+    "eci_score": 94.44274533407675,
+    "eci_ci_low": "84.1954573215807",
+    "eci_ci_high": "100.22861825141267",
+    "accessibility": "Unknown"
+  },
+  "vicuna-13b-v1.1": {
+    "organization": null,
+    "publication_date": "2023-04-12",
+    "eci_score": 94.2786386289073,
+    "eci_ci_low": "87.70427718064819",
+    "eci_ci_high": "99.67605221371142",
+    "accessibility": "Unknown"
+  },
+  "MPT-7B": {
+    "organization": null,
+    "publication_date": "2023-05-05",
+    "eci_score": 94.18118747644458,
+    "eci_ci_low": "89.62322347836658",
+    "eci_ci_high": "99.5107211019763",
+    "accessibility": "Unknown"
+  },
+  "Gemma 2B": {
+    "organization": null,
+    "publication_date": "2024-02-21",
+    "eci_score": 93.78885119384815,
+    "eci_ci_low": "89.36589627808758",
+    "eci_ci_high": "97.39991215282242",
+    "accessibility": "Unknown"
+  },
+  "StarCoder 2 7B": {
+    "organization": null,
+    "publication_date": "2024-02-29",
+    "eci_score": 93.13189080160733,
+    "eci_ci_low": "80.29358314858055",
+    "eci_ci_high": "100.11682194220916",
+    "accessibility": "Unknown"
+  },
+  "XGen-7B": {
+    "organization": null,
+    "publication_date": "2023-09-07",
+    "eci_score": 92.98944834666094,
+    "eci_ci_low": "89.13909914743377",
+    "eci_ci_high": "97.09433337329925",
+    "accessibility": "Unknown"
+  },
+  "Qwen-1_8B": {
+    "organization": null,
+    "publication_date": "2023-11-30",
+    "eci_score": 92.45717822413201,
+    "eci_ci_low": "75.39494565217711",
+    "eci_ci_high": "98.31559953210059",
+    "accessibility": "Unknown"
+  },
+  "open_llama_7b": {
+    "organization": null,
+    "publication_date": "2023-06-07",
+    "eci_score": 91.23245574943493,
+    "eci_ci_low": "86.02712183455239",
+    "eci_ci_high": "97.10227715427003",
+    "accessibility": "Unknown"
+  },
+  "Phi-1.5": {
+    "organization": null,
+    "publication_date": "2023-09-11",
+    "eci_score": 91.13161140660726,
+    "eci_ci_low": "72.87450766449938",
+    "eci_ci_high": "99.75194335635904",
+    "accessibility": "Unknown"
+  },
+  "Baichuan1-7B": {
+    "organization": null,
+    "publication_date": "2023-06-01",
+    "eci_score": 90.00636155454124,
+    "eci_ci_low": "84.43388582638893",
+    "eci_ci_high": "96.07921368398512",
+    "accessibility": "Unknown"
+  },
+  "RedPajama-INCITE-7B-Base": {
+    "organization": null,
+    "publication_date": "2023-05-04",
+    "eci_score": 89.99118243537619,
+    "eci_ci_low": "84.67839233059132",
+    "eci_ci_high": "95.54507633504532",
+    "accessibility": "Unknown"
+  },
+  "Dolly 2.0-12b": {
+    "organization": null,
+    "publication_date": "2023-04-12",
+    "eci_score": 89.2346024376548,
+    "eci_ci_low": "82.6308090363392",
+    "eci_ci_high": "94.6416590063605",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek Coder 6.7B": {
+    "organization": null,
+    "publication_date": "2024-01-25",
+    "eci_score": 89.1835675049095,
+    "eci_ci_low": "82.31620289428263",
+    "eci_ci_high": "94.78145169638547",
+    "accessibility": "Unknown"
+  },
+  "StarCoder 2 3B": {
+    "organization": null,
+    "publication_date": "2024-02-29",
+    "eci_score": 88.32947079072453,
+    "eci_ci_low": "81.13490718627031",
+    "eci_ci_high": "95.16514087110146",
+    "accessibility": "Unknown"
+  },
+  "Qwen2.5-Coder-0.5B": {
+    "organization": null,
+    "publication_date": "2024-09-18",
+    "eci_score": 87.73615901715425,
+    "eci_ci_low": "67.16087167881639",
+    "eci_ci_high": "97.24486221366027",
+    "accessibility": "Unknown"
+  },
+  "Cerebras-GPT-13B": {
+    "organization": null,
+    "publication_date": "2023-04-06",
+    "eci_score": 82.79017189060238,
+    "eci_ci_low": "74.34864470841964",
+    "eci_ci_high": "87.48922833936493",
+    "accessibility": "Unknown"
+  },
+  "DeepSeek Coder 1.3B": {
+    "organization": null,
+    "publication_date": "2024-01-25",
+    "eci_score": 63.81307931263751,
+    "eci_ci_low": "58.76160664881615",
+    "eci_ci_high": "74.52415988318049",
+    "accessibility": "Unknown"
+  },
+  "stablelm-tuned-alpha-7b": {
+    "organization": null,
+    "publication_date": "2023-04-19",
+    "eci_score": 55.28545773503787,
+    "eci_ci_low": "43.33859921002434",
+    "eci_ci_high": "73.98898922716621",
+    "accessibility": "Unknown"
+  }
+}

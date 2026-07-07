@@ -29,6 +29,7 @@ const sidebarToggle  = document.getElementById('sidebarToggle');
 const sidebar        = document.getElementById('sidebar');
 const statusDot      = document.getElementById('statusDot');
 const statusText     = document.getElementById('statusText');
+const routingMode    = document.getElementById('routingMode');
 
 /* ── Auto-resize textarea ──────────────────────────────────────────── */
 queryInput.addEventListener('input', () => {
@@ -137,11 +138,14 @@ async function handleSend() {
 
   try {
     let result;
+    const mode = routingMode ? routingMode.value : 'standard';
+
     if (currentFiles.length > 0) {
       // Use multipart form endpoint
       const formData = new FormData();
       formData.append('query', query);
       formData.append('file', currentFiles[0]); // Primary file
+      formData.append('mode', mode);
       const resp = await fetch(`${API_BASE}/api/route-with-file`, {
         method: 'POST',
         body: formData
@@ -157,7 +161,8 @@ async function handleSend() {
           query,
           has_image: false,
           has_file: false,
-          file_size_kb: 0
+          file_size_kb: 0,
+          mode: mode
         })
       });
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
