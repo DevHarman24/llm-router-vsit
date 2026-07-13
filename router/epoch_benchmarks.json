@@ -1,4 +1,7 @@
 {
+  "GPT-5.6 Sol": {
+    "eci_score": 163.5
+  },
   "Claude Fable 5": {
     "organization": null,
     "publication_date": "2026-06-09",
@@ -8,12 +11,7 @@
     "accessibility": "Unknown"
   },
   "GPT-5.5 Pro": {
-    "organization": null,
-    "publication_date": "2026-04-23",
-    "eci_score": 161.01001910494256,
-    "eci_ci_low": "158.42499212971885",
-    "eci_ci_high": "170.6361000986256",
-    "accessibility": "Unknown"
+    "eci_score": 160.0
   },
   "GPT-5.5": {
     "organization": null,
@@ -38,6 +36,9 @@
     "eci_ci_low": "155.0056359564457",
     "eci_ci_high": "167.08714515738484",
     "accessibility": "Unknown"
+  },
+  "GPT-5.6 Terra": {
+    "eci_score": 158.0
   },
   "Claude Opus 4.7": {
     "organization": null,

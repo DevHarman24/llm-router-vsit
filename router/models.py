@@ -34,12 +34,18 @@ THINKING_MODELS = {
     "anthropic/claude-3-7-sonnet",
     "anthropic/claude-sonnet-4",
     "anthropic/claude-opus-4",
+    "anthropic/claude-fable-5",
+    "anthropic/claude-fable-latest",
     # OpenAI
     "openai/o1",
     "openai/o3",
     "openai/o4-mini",
     "openai/gpt-5",
     "openai/gpt-5.5",
+    "openai/gpt-5.5-pro",
+    "openai/gpt-5.6-sol",
+    "openai/gpt-5.6-terra",
+    "openai/gpt-5.6-luna",
     # Google
     "google/gemini-2.0-flash-thinking-exp",
     "google/gemini-2.5-pro",
@@ -76,12 +82,17 @@ CODING_MODELS = {
     "anthropic/claude-3-7-sonnet",
     "anthropic/claude-sonnet-4",
     "anthropic/claude-opus-4",
+    "anthropic/claude-fable-5",
+    "anthropic/claude-fable-latest",
     # OpenAI
     "openai/gpt-4o",
     "openai/o3",
     "openai/o4-mini",
     "openai/gpt-5",
     "openai/gpt-5.5",
+    "openai/gpt-5.5-pro",
+    "openai/gpt-5.6-sol",
+    "openai/gpt-5.6-terra",
     # DeepSeek
     "deepseek/deepseek-coder-v2",
     "deepseek/deepseek-r1",
@@ -107,6 +118,10 @@ VISION_MODELS = {
     "openai/gpt-4o-mini",
     "openai/gpt-5",
     "openai/gpt-5.5",
+    "openai/gpt-5.5-pro",
+    "openai/gpt-5.6-sol",
+    "openai/gpt-5.6-terra",
+    "openai/gpt-5.6-luna",
     # Anthropic
     "anthropic/claude-3-5-sonnet",
     "anthropic/claude-3-7-sonnet",
@@ -114,6 +129,8 @@ VISION_MODELS = {
     "anthropic/claude-3-haiku",
     "anthropic/claude-sonnet-4",
     "anthropic/claude-opus-4",
+    "anthropic/claude-fable-5",
+    "anthropic/claude-fable-latest",
     # Google
     "google/gemini-2.0-flash",
     "google/gemini-1.5-pro",
@@ -326,21 +343,17 @@ def get_best_model_for_tier(tier: int, needs_vision: bool = False,
             # Cheap logic: optimize purely for lowest cost
             return m.price_per_million_tokens
         elif is_best_logic:
-            # Best logic: optimize purely for capability/benchmarks using dynamic data
+            # Best logic: optimize for capability/benchmarks, but cost breaks ties among similar scores
             score = 0.0
             
             if USE_EPOCH_BENCHMARKS:
                 epoch_data = get_epoch_benchmarks_data()
                 eci_score = _fuzzy_match_epoch_score(m, epoch_data)
-                # ECI scores are usually 0-200. Multiply by a large weight to overcome price.
+                # ECI scores are usually 0-200. Multiply by 100.
                 score -= eci_score * 100
             else:
                 benchmarks = get_benchmarks()
-                # Default to average scores if model is missing from JSON
                 model_scores = benchmarks.get(m.id, {"coding": 50, "reasoning": 50, "vision": 50})
-                
-                # Higher score is better in JSON (0-100), but score_model wants lower value.
-                # So we subtract the benchmark score. Multiply by a large weight to overcome price.
                 if needs_coding:
                     score -= model_scores.get("coding", 50) * 100
                 elif needs_thinking:
@@ -350,25 +363,53 @@ def get_best_model_for_tier(tier: int, needs_vision: bool = False,
                 else:
                     score -= model_scores.get("reasoning", 50) * 50
                     
-            # Secondary tie-breakers: larger context is better, higher price as a proxy for model size/capability
+            # Context window bonus
             score -= (m.context_window / 1_000_000) * 10
-            # Cap the price proxy bonus at a small value (e.g. 5 points) so it never overrides a real 1-point benchmark difference (which is 100 points)
-            score -= min(5.0, (m.price_per_million_tokens / 10.0))
+            # Higher penalty for price so it becomes a factor when scores are almost the same.
+            # E.g. $10 difference adds 100 to score (equivalent to 1 ECI point).
+            score += (m.price_per_million_tokens * 10.0)
             return score
         else:
-            # Standard logic (Tier 2/3): Balanced approach scoring price vs capabilities
-            score = m.price_per_million_tokens
+            # Standard logic: Balanced approach scoring price vs capabilities
+            # We use task-specific benchmarks and provider bonuses to ensure a healthy mix.
+            score = m.price_per_million_tokens * 10.0
+            
+            benchmarks = get_benchmarks()
+            model_scores = benchmarks.get(m.id, {"coding": 50, "reasoning": 50, "vision": 50})
+            
+            # Apply task-specific bonuses to force a mix of providers based on their strengths
+            if needs_coding:
+                if m.provider in ["anthropic", "deepseek"]:
+                    score -= 30.0  # Provider specialization bonus
+                score -= model_scores.get("coding", 50) * 8.0
+            elif needs_thinking:
+                if m.provider in ["openai", "deepseek"]:
+                    score -= 30.0
+                score -= model_scores.get("reasoning", 50) * 8.0
+            elif needs_vision:
+                if m.provider in ["google", "openai"]:
+                    score -= 30.0
+                score -= model_scores.get("vision", 50) * 8.0
+            else:
+                score -= model_scores.get("reasoning", 50) * 5.0
+            
+            # Optionally blend in the general Epoch score, but at a lower weight so 
+            # task-specific metrics and provider bonuses dictate the mix.
+            if USE_EPOCH_BENCHMARKS:
+                epoch_data = get_epoch_benchmarks_data()
+                eci_score = _fuzzy_match_epoch_score(m, epoch_data)
+                score -= eci_score * 5.0
             
             # Reward larger context windows slightly
-            score -= (m.context_window / 100_000) * 0.05
+            score -= (m.context_window / 100_000) * 0.5
             
             # Reward extra capabilities (nice to have)
             if m.supports_vision and not needs_vision:
-                score -= 0.02
+                score -= 2.0
             if m.supports_thinking and not needs_thinking:
-                score -= 0.1
+                score -= 5.0
             if m.supports_coding and not needs_coding:
-                score -= 0.05
+                score -= 3.0
                 
             return score
 
