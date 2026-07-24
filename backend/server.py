@@ -175,5 +175,6 @@ async def health():
     return {"status": "ok", "groq_configured": bool(os.getenv("GROQ_API_KEY"))}
 
 
-# Serve frontend static files
-app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+# Serve frontend static files (local dev only — Vercel handles static files via CDN)
+if not os.getenv("VERCEL"):
+    app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
