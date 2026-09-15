@@ -175,14 +175,41 @@ def _fetch_from_openrouter() -> tuple[dict, dict]:
             agentic_idx   = aa.get("agentic_index")
             arena_avg     = _arena_score(design_arena)
 
-            coding    = coding_idx or agentic_idx or arena_avg
-            reasoning = intel_idx  or agentic_idx or coding_idx or arena_avg
+            # ── Coding score ─────────────────────────────────────────────────
+            # Priority: coding_index → agentic_index → arena_avg
+            coding = coding_idx or agentic_idx or arena_avg
+
+            # ── Reasoning score ──────────────────────────────────────────────
+            # Priority: intelligence_index → agentic_index → arena_avg
+            # NOTE: We deliberately do NOT fall back to coding_index here.
+            # Real AA data across frontier models shows a ~27-35pt gap between
+            # coding and intelligence scores (e.g. gpt-5.6-sol: coding=77.4,
+            # intel=47.1; gpt-6-astra: coding=76.9, intel=52.8).
+            # Using coding as a proxy for reasoning inflates weaker reasoning
+            # models and causes wrong routing (e.g. gpt-5.4 ranked above
+            # gpt-6-astra for reasoning tasks despite having no intel score).
+            # Fallback: if both intel_idx and arena_avg are missing, estimate
+            # reasoning as coding * 0.65 (conservative — matches real data gap).
+            if intel_idx is not None:
+                reasoning = intel_idx
+            elif agentic_idx is not None:
+                reasoning = agentic_idx
+            elif arena_avg is not None:
+                reasoning = arena_avg
+            elif coding_idx is not None:
+                # Last resort: penalized coding estimate (real gap avg ~0.65 ratio)
+                reasoning = round(coding_idx * 0.65, 1)
+            else:
+                reasoning = None
 
             if coding is None and reasoning is None:
                 continue
 
-            coding    = coding    or reasoning
-            reasoning = reasoning or coding
+            # Fill in whichever is still missing
+            if coding is None:
+                coding = reasoning
+            if reasoning is None:
+                reasoning = round(float(coding) * 0.65, 1)
 
             scores[model_id] = {
                 "coding":    round(float(coding), 1),

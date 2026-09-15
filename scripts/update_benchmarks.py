@@ -89,35 +89,28 @@ load_dotenv(os.path.join(ROOT_DIR, ".env"))
 def update_benchmarks_file():
     print(f"Updating {BENCHMARKS_FILE}...")
     try:
-        new_scores = fetch_live_benchmarks()
+        from router.benchmarks import get_benchmarks
+        print("Fetching latest benchmark scores (OpenRouter API, AA, Curated, and Inferred)...")
+        scores = get_benchmarks()
         
-        # Write heuristically generated scores atomically first so that
-        # _fetch_from_aa() can read the full list of local keys.
-        temp_file = BENCHMARKS_FILE + ".tmp"
-        with open(temp_file, "w", encoding="utf-8") as f:
-            json.dump(new_scores, f, indent=2)
-            
-        os.replace(temp_file, BENCHMARKS_FILE)
-        
-        # Fetch live benchmarks from Artificial Analysis
-        from router.benchmarks import _fetch_from_aa
-        print("Fetching live scores from Artificial Analysis API...")
-        aa_scores = _fetch_from_aa()
-        
-        if aa_scores:
-            print(f"Merging {len(aa_scores)} live scores from AA API...")
-            new_scores.update(aa_scores)
-            
-            # Rewrite with merged scores
+        if scores:
+            temp_file = BENCHMARKS_FILE + ".tmp"
+            with open(temp_file, "w", encoding="utf-8") as f:
+                json.dump(scores, f, indent=2)
+            os.replace(temp_file, BENCHMARKS_FILE)
+            print(f"Benchmarks successfully updated with {len(scores)} models!")
+        else:
+            print("Fallback: calculating heuristic baseline scores...")
+            new_scores = fetch_live_benchmarks()
+            temp_file = BENCHMARKS_FILE + ".tmp"
             with open(temp_file, "w", encoding="utf-8") as f:
                 json.dump(new_scores, f, indent=2)
             os.replace(temp_file, BENCHMARKS_FILE)
-            print("Benchmarks successfully updated with live API data!")
-        else:
-            print("Benchmarks successfully updated (heuristic only, no live API data returned).")
+            print(f"Benchmarks updated with {len(new_scores)} models (heuristic baseline).")
             
     except Exception as e:
         print(f"Failed to update benchmarks: {e}")
 
 if __name__ == "__main__":
     update_benchmarks_file()
+

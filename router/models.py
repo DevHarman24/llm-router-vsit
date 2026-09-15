@@ -27,19 +27,30 @@ TIER2_MIN_PRICE = 0.5    # >= $0.5/M tokens → Tier 2 (mid-range)
 # Models known to have strong reasoning/thinking capability
 # Note: only include true frontier/reasoning models here — being in this set
 # forces Tier 1 assignment regardless of price, so keep it lean.
+# Last updated: Sep 2026 — synced against OpenRouter catalog
 THINKING_MODELS = {
     # Anthropic
-    "anthropic/claude-3-opus",
-    "anthropic/claude-3-5-sonnet",
-    "anthropic/claude-3-7-sonnet",
     "anthropic/claude-sonnet-4",
+    "anthropic/claude-sonnet-4.5",
+    "anthropic/claude-sonnet-5",
     "anthropic/claude-opus-4",
+    "anthropic/claude-opus-4.1",
+    "anthropic/claude-opus-4.5",
+    "anthropic/claude-opus-4.6",
+    "anthropic/claude-opus-4.7",
+    "anthropic/claude-opus-4.8",
+    "anthropic/claude-opus-5",
     "anthropic/claude-fable-5",
-    "anthropic/claude-fable-latest",
-    # OpenAI
+    "anthropic/claude-fable-5.1",
+    # OpenAI — o-series and GPT-5+
     "openai/o1",
+    "openai/o1-pro",
     "openai/o3",
+    "openai/o3-mini",
+    "openai/o3-mini-high",
+    "openai/o3-pro",
     "openai/o4-mini",
+    "openai/o4-mini-high",
     "openai/gpt-5",
     "openai/gpt-5.5",
     "openai/gpt-5.5-pro",
@@ -47,23 +58,24 @@ THINKING_MODELS = {
     "openai/gpt-5.6-terra",
     "openai/gpt-5.6-luna",
     # Google
-    "google/gemini-2.0-flash-thinking-exp",
     "google/gemini-2.5-pro",
-    "google/gemini-3",
+    "google/gemini-2.5-pro-preview",
+    "google/gemini-3.1-pro-preview",
+    "google/gemini-3.5-flash",
     # DeepSeek
     "deepseek/deepseek-r1",
-    # Qwen — thinking variants (mid/low tier)
-    "qwen/qwq-32b",
+    "deepseek/deepseek-r1-0528",
+    "deepseek/deepseek-r1-distill-llama-70b",
+    # Qwen — thinking variants
     "qwen/qwen3-max-thinking",
     "qwen/qwen3-vl-8b-thinking",
     "qwen/qwen3-vl-30b-a3b-thinking",
     "qwen/qwen3-vl-235b-a22b-thinking",
     "qwen/qwen3-next-80b-a3b-thinking",
-    "qwen/qwen-plus-2025-07-28:thinking",
-    "qwen/qwen3-235b-a22b-thinking",
-    "qwen/qwen3-30b-a3b-thinking",
-    # AllenAI
-    "allenai/olmo-3-32b-think",
+    "qwen/qwen3-235b-a22b-thinking-2507",
+    "qwen/qwen3-30b-a3b-thinking-2507",
+    # Perplexity
+    "perplexity/sonar-reasoning-pro",
     # Arcee
     "arcee-ai/trinity-large-thinking",
     # MoonShot
@@ -71,47 +83,64 @@ THINKING_MODELS = {
     # Sao10K (fine-tuned reasoning models)
     "sao10k/l3.3-euryale-70b",
     "sao10k/l3.1-euryale-70b",
-    "sao10k/l3.1-70b-hanami-x1",
     "sao10k/l3-lunaris-8b",
 }
 
 # Models known for strong coding ability
+# Last updated: Sep 2026 — ranked by AA coding_index from benchmarks.json
 CODING_MODELS = {
     # Anthropic
     "anthropic/claude-3-5-sonnet",
     "anthropic/claude-3-7-sonnet",
     "anthropic/claude-sonnet-4",
     "anthropic/claude-opus-4",
+    "anthropic/claude-opus-4.8-fast",   # coding 74.3 (AA)
     "anthropic/claude-fable-5",
+    "anthropic/claude-fable-5.1",       # coding 81.6 — highest AA coding score
+    "anthropic/claude-opus-5",          # coding 78.0
     "anthropic/claude-fable-latest",
     # OpenAI
     "openai/gpt-4o",
     "openai/o3",
     "openai/o4-mini",
+    "openai/gpt-4.1",
     "openai/gpt-5",
     "openai/gpt-5.5",
     "openai/gpt-5.5-pro",
     "openai/gpt-5.6-sol",
+    "openai/gpt-5.6-sol-pro",           # coding 75.4
     "openai/gpt-5.6-terra",
+    "openai/gpt-5.6-terra-pro",         # coding 74.7
+    "openai/gpt-6-astra",               # coding 76.9 (real AA data)
+    "openai/gpt-6-astra-pro",           # coding 74.9
+    # xAI
+    "x-ai/grok-4.6",                    # coding 76.8
+    # Google
+    "google/gemini-3.7-flash",          # coding 76.1
+    "google/gemini-3.8-flash",          # coding 76.3
     # DeepSeek
     "deepseek/deepseek-coder-v2",
     "deepseek/deepseek-r1",
     # Qwen
     "qwen/qwen-2.5-coder-32b-instruct",
     "qwen/qwen3-coder",
+    # MoonShot
+    "moonshotai/kimi-k2.7-code",
+    "moonshotai/kimi-k2-thinking",
+    "moonshotai/kimi-k3",               # coding 76.2
     # Mistral / Arcee coding specialists (mid tier)
     "mistralai/codestral",
     "mistralai/devstral",
     "arcee-ai/coder-large",
-    # Kwaipilot / MoonShot code specialists
+    # Kwaipilot
     "kwaipilot/kat-coder-pro",
-    "moonshotai/kimi-k2.7-code",
-    "moonshotai/kimi-k2-thinking",
     # Cohere
     "cohere/north-mini-code",
 }
 
+
 # Models that support vision/image input
+# Last updated: Sep 2026 — sourced from OR architecture.input_modalities
 VISION_MODELS = {
     # OpenAI
     "openai/gpt-4o",
@@ -122,26 +151,55 @@ VISION_MODELS = {
     "openai/gpt-5.6-sol",
     "openai/gpt-5.6-terra",
     "openai/gpt-5.6-luna",
-    # Anthropic
-    "anthropic/claude-3-5-sonnet",
-    "anthropic/claude-3-7-sonnet",
-    "anthropic/claude-3-opus",
+    "openai/gpt-6-astra",
+    "openai/gpt-6-astra-pro",
+    # Anthropic — all claude-3.x+ support vision
     "anthropic/claude-3-haiku",
+    "anthropic/claude-haiku-4.5",
     "anthropic/claude-sonnet-4",
+    "anthropic/claude-sonnet-4.5",
+    "anthropic/claude-sonnet-5",
     "anthropic/claude-opus-4",
+    "anthropic/claude-opus-4.1",
+    "anthropic/claude-opus-4.5",
+    "anthropic/claude-opus-4.6",
+    "anthropic/claude-opus-4.7",
+    "anthropic/claude-opus-4.8",
+    "anthropic/claude-opus-5",
     "anthropic/claude-fable-5",
-    "anthropic/claude-fable-latest",
-    # Google
-    "google/gemini-2.0-flash",
-    "google/gemini-1.5-pro",
+    "anthropic/claude-fable-5.1",
+    # Google Gemini (all 2.5+ are multimodal)
+    "google/gemini-2.5-flash",
+    "google/gemini-2.5-flash-lite",
     "google/gemini-2.5-pro",
+    "google/gemini-2.5-pro-preview",
     "google/gemini-2.5-flash-image",
-    "google/gemini-3",
-    # Meta
-    "meta-llama/llama-3.2-90b-vision-instruct",
-    "meta-llama/llama-3.2-11b-vision-instruct",
-    # Qwen vision models (mid/low tier)
-    "qwen/qwen2-vl-72b-instruct",
+    "google/gemini-3-flash-preview",
+    "google/gemini-3-pro-image",
+    "google/gemini-3-pro-image-preview",
+    "google/gemini-3.1-flash-image",
+    "google/gemini-3.1-flash-image-preview",
+    "google/gemini-3.1-flash-lite",
+    "google/gemini-3.1-flash-lite-image",
+    "google/gemini-3.1-pro-preview",
+    "google/gemini-3.5-flash",
+    "google/gemini-3.5-flash-lite",
+    # Amazon Nova (multimodal)
+    "amazon/nova-lite-v1",
+    "amazon/nova-pro-v1",
+    "amazon/nova-premier-v1",
+    "amazon/nova-2-lite-v1",
+    # ByteDance Seed
+    "bytedance-seed/seed-1.6",
+    "bytedance-seed/seed-1.6-flash",
+    "bytedance-seed/seed-2-1-turbo",
+    "bytedance-seed/seed-2.0-code",
+    "bytedance-seed/seed-2.0-lite",
+    "bytedance-seed/seed-2.0-mini",
+    # DeepSeek vision
+    "deepseek/deepseek-v4-flash-vision-exp",
+    "deepseek/deepseek-v4.1-flash",
+    # Qwen vision models
     "qwen/qwen2.5-vl-72b-instruct",
     "qwen/qwen3-vl-8b-instruct",
     "qwen/qwen3-vl-30b-a3b-instruct",
@@ -150,10 +208,10 @@ VISION_MODELS = {
     "qwen/qwen3-vl-30b-a3b-thinking",
     "qwen/qwen3-vl-235b-a22b-thinking",
     "qwen/qwen3-vl-32b-instruct",
-    # Nvidia
-    "nvidia/nemotron-nano-12b-v2-vl",
     # Baidu
-    "baidu/ernie-4.5-vl",
+    "baidu/ernie-4.5-vl-424b-a47b",
+    # ByteDance UI agent
+    "bytedance/ui-tars-1.5-7b",
 }
 
 
